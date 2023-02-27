@@ -2,26 +2,30 @@ import React, { useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { data, sliderSettings } from "../../data/CarouselData";
-import { Row, Heading, Section, TextWrapper } from "../../GlobalStyles";
+import { Row, Section, TextWrapper } from "../../GlobalStyles";
 import {
+  ContainerTop,
+  StyledContentTopTwo,
+  StyledContentTopThree,
   ButtonContainer,
   ReviewSlider,
   ImageWrapper,
   CarouselImage,
   CardButton,
-} from "./CarouselStyles";
+} from "./ProjectStyles";
 
 const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Section margin="auto" maxWidth="1280px" padding="50px 70px" inverse>
-      <Row justify="space-between" margin="1rem" wrap="wrap">
-        <Heading width="auto" inverse>
-          Find more about us
-        </Heading>
+    <Section margin="0 10%" maxWidth="1280px" padding="50px 70px" inverse>
+      <Row justify="space-between" direction="column" margin="4rem 0" wrap="wrap">
+        <ContainerTop>
+          <StyledContentTopTwo>Our&nbsp;</StyledContentTopTwo>
+          <StyledContentTopThree>Projects</StyledContentTopThree>
+        </ContainerTop>
         <ButtonContainer>
-          <IconContext.Provider value={{ size: "3rem", color: "#1d609c" }}>
+          <IconContext.Provider value={{ size: "3rem", color: "#325272"}}>
             <FaArrowCircleLeft onClick={sliderRef?.slickPrev} />
             <FaArrowCircleRight onClick={sliderRef?.slickNext} />
           </IconContext.Provider>
@@ -38,7 +42,7 @@ const Carousel = () => {
             <TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
               {el.description}
             </TextWrapper>
-            <CardButton>Learn More</CardButton>
+            <CardButton to="./Projects">View Projects</CardButton>
           </ImageWrapper>
         ))}
       </ReviewSlider>

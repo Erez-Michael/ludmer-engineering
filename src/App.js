@@ -1,23 +1,26 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 //Pages
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Navbar from "./components/Navbar/Navbar";
+import About from "./pages/AboutPage";
+import Projects from "./pages/ProjectsPage";
+import Contact from "./pages/ContactPage";
+
 
 const App = () => {
   return (
     <Router>
-      <GlobalStyles /> {/* Everything within *{} in the GlobalStyle file  */}
+      <GlobalStyles />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

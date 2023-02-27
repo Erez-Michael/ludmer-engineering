@@ -8,6 +8,7 @@ import {
   ContentButton,
   Subtitle,
   ImgWrapper,
+  ImgWrapperTwo,
   Img,
   ContentColumn,
 } from "./ContentStyles.js";
@@ -22,6 +23,7 @@ export const Content = ({
   description,
   buttonLabel,
   img,
+  img2,
   alt,
   inverse,
   reverse,
@@ -93,6 +95,7 @@ export const Content = ({
                 transition={{ duration: 0.5 }}
               />
             </ImgWrapper>
+           
           </ContentColumn>
         </ContentRow>
       </Container>

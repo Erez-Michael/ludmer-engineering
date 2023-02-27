@@ -44,7 +44,6 @@ export const MainHeading = styled.h1`
   }
 
   span {
-    background-color: red;
 
     /* Create the gradient. */
     background-image: linear-gradient(45deg, #009966, #f3ec78);
@@ -96,28 +95,32 @@ export const Section = styled.section`
   min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
   @media screen and (max-width: 768px) {
     padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
-    margin: ${({ smMargin }) => (smMargin ? smMargin : "-100px 0 0 0")};
   }
-  @media screen and (max-width: 640px) {
-    margin: ${({ smMargin }) => (smMargin ? smMargin : "-20px 0 0 0")};
-  }
+ 
 `;
 
 export const Row = styled.div`
-	display: flex;
-	justify-content: ${({ justify }) => (justify ? justify : '')};
-	align-items: ${({ align }) => (align ? align : '')};
-	gap: ${({ gap }) => (gap ? gap : '')};
-	padding: ${({ padding }) => (padding ? padding : '')};
-	margin: ${({ margin }) => (margin ? margin : '')};
-	position: ${({ position }) => (position ? position : '')};
-	width: ${({ width }) => (width ? width : 'auto')};
-	min-width: ${({ minWidth }) => (minWidth ? minWidth : 'auto')};
-	max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : 'auto')};
-	height: ${({ height }) => (height ? height : 'auto')};
-	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
-	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
-	flex-wrap: ${({ wrap }) => (wrap ? wrap : '')};
+  display: flex;
+  justify-content: ${({ justify }) => (justify ? justify : "")};
+  flex-direction: ${({ direction }) => (direction ? direction : "")};
+  align-items: ${({ align }) => (align ? align : "")};
+  gap: ${({ gap }) => (gap ? gap : "")};
+  padding: ${({ padding }) => (padding ? padding : "")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  position: ${({ position }) => (position ? position : "")};
+  width: ${({ width }) => (width ? width : "auto")};
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
+  height: ${({ height }) => (height ? height : "auto")};
+  max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
+  min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
+  flex-wrap: ${({ wrap }) => (wrap ? wrap : "")};
+  @media screen and (max-width: 768px) {
+    display: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: ${({ direction }) => (direction ? direction : "row")};
+  }
 `;
 
 export const Column = styled.div`

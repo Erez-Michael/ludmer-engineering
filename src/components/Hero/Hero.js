@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button, Container, MainHeading } from "../../GlobalStyles";
 import {
   HeroImage,
@@ -23,9 +23,9 @@ const Hero = () => {
           design
         </MainHeading>
         <ButtonWrapper>
-          <Link to="about">
+          <NavLink to="about">
             <Button>Learn more</Button>
-          </Link>
+          </NavLink>
         </ButtonWrapper>
       </Container>
     </HeroSection>

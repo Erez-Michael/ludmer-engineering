@@ -54,7 +54,9 @@ export const ImgWrapper = styled(motion.div)`
   max-height: 700px;
   justify-content: center;
   position: relative;
+  z-index: -1;
 `;
+
 
 export const TopLine = styled(motion.div)`
   font-size: 0.9rem;
@@ -75,6 +77,7 @@ export const Img = styled(motion.img)`
   max-height: 700px;
   z-index: 1;
 `;
+
 
 export const Heading = styled(motion.h2)`
   margin-bottom: 24px;

@@ -3,7 +3,7 @@ export const data = [
     title: "What our clients say",
     description:
       "Our clients happily stay with our services for more several years now. See real reviews from our clients.",
-    image: "./assets/clients.jpg",
+    image: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738133/Ludmer%20Engineering/Project%201/IMG_5040_vyluwb.jpg",
   },
   {
     title: "Our security ",

@@ -1,136 +1,164 @@
 import styled from "styled-components";
-import { Container } from "../../GlobalStyles";
 import { Link } from "react-router-dom";
 
-export const Nav = styled.nav`
+export const NavbarContainer = styled.nav`
+  z-index: 999 !important;
+  position: fixed;
+  width: 100%;
+  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
   background: rgb(255, 255, 255);
   background: linear-gradient(
     20deg,
     rgba(255, 255, 255, 0.3) 0%,
-    rgba(63, 92, 122, 1) 42%,
+    rgba(63, 92, 122, 0.9) 42%,
     rgba(3, 41, 80, 1) 100%
   );
- 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  width: 100%;
-  transition: background-color 0.3s ease-in;
-`;
-
-export const NavbarContainer = styled(Container)`
-  display: flex;
-  justify-content: start;
-  height: 80px;
-  ${Container}
-`;
-
-export const NavLogo = styled(Link)`
-  color: #fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  z-index: 50;
-`;
-
-export const NavIcon = styled.img`
-  margin-right: 1rem;
-  width: 3rem;
-`;
-
-export const MobileIcon = styled.div`
-  display: none;
-  z-index: 50;
-  @media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    height: 120px;
   }
-`;
 
-export const NavMenu = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  width: 100%;
-  @media screen and (max-width: 960px) {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    padding-top: 30%;
-    top: 0;
-    left: 0;
-    opacity: ${({ show }) => (show ? 1 : 0)};
-    visibility: ${({ show }) => (show ? "visible" : "hidden")};
-    transform: translateY(${({ show }) => (show ? "0" : "-10px")});
-    transition: opacity 0.5s ease;
+  @media screen and (min-width: 891px) {
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 640px) {
     background: linear-gradient(
-      0deg,
+      20deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(63, 92, 122, 1) 70%,
+      rgba(63, 92, 122, 1) 42%,
       rgba(3, 41, 80, 1) 100%
     );
   }
-  > li:first-child {
-    margin-left: auto;
+`;
+
+export const NavbarInnerContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 10% 0 10%;
+  @media screen and (max-width: 1024px) {
+    margin-top: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 10px;
   }
 `;
 
-export const NavItem = styled.li`
-  height: 80px;
-  cursor: pointer;
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    &:hover {
-      border: none;
-    }
-  }
+export const StyledLogo = styled.div`
+  z-index: 9 !important;
 `;
-
-export const NavLinks = styled.span`
-  color: #fff;
+export const RightContainer = styled.div`
   display: flex;
   align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-  &:hover {
-    color: #c8c9d8;
-    transition: all 0.3s ease;
-  }
-  @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-    &:hover {
-      color: #4b59f7;
-      transition: all 0.3s ease;
+  animation-duration: 0.5s;
+  animation-name: slideInRight;
+
+  @keyframes slideInRight {
+    from {
+      transform: translate3d(250%, 0, 0);
+      visibility: visible;
     }
+  }
+  @media (min-width: 891px) {
+    font-size: 10px;
   }
 `;
 
-export const NavBtnLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const NavLink = styled(Link)`
+  color: white;
+  font-size: 1rem;
   text-decoration: none;
-  padding: 8px 16px;
-  height: 100%;
-  width: 100%;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+  :hover {
+    color: #009966;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.09);
+  }
+  &.active {
+    color: #009966;
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+`;
+export const OpenLinksButton = styled.button`
+  width: 80px;
+  background: none;
   border: none;
-  outline: none;
+  color: whitesmoke;
+  font-size: 45px;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
+
+export const NavbarExtendedContainer = styled.div`
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  overflow-y: hidden;
+  z-index: 9 !important;
+`;
+
+export const NavbarLinkExtendedOne = styled(Link)`
+  color: whitesmoke;
+  font-size: large;
+  text-decoration: none;
+  cursor: pointer;
+  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+  animation-duration: 0.4s;
+  animation-name: slideInLeft;
+
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-250%, 0, 0);
+      visibility: visible;
+    }
+  }
+`;
+
+export const NavbarLinkExtendedTwo = styled(Link)`
+  color: whitesmoke;
+  font-size: large;
+  text-decoration: none;
+  cursor: pointer;
+  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+  animation-duration: 0.6s;
+  animation-name: slideInRight;
+
+  @keyframes slideInRight {
+    from {
+      transform: translate3d(250%, 0, 0);
+      visibility: visible;
+    }
+  }
+`;
+
+export const NavbarLinkExtendedThree = styled(NavbarLinkExtendedOne)`
+  animation-duration: 0.8s;
+`;
+export const NavbarLinkExtendedFour = styled(NavbarLinkExtendedTwo)`
+  animation-duration: 1s;
+`;
+export const NavbarLinkExtendedFive = styled(NavbarLinkExtendedOne)`
+  animation-duration: 1.2s;
+`;
+export const NavbarLinkExtendedSix = styled(NavbarLinkExtendedTwo)`
+  animation-duration: 1.4s;
+`;
+

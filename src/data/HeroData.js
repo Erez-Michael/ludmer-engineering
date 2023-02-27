@@ -4,11 +4,11 @@ export const heroOne = {
   topLine: {
     text: "Montreal based",
   },
-  headline: "Providing solutions since 2019",
+  headline: "Providing solutions since 2022",
   description: "Proud to serve our community",
   buttonLabel: "Learn More",
   imgStart: "start",
-  img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1677007099/Engineer-tools_gdcl9k.jpg",
+  img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1677516246/mtlCrane_px9vdq.png",
   start: "true",
 };
 
