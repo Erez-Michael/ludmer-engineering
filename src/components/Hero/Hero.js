@@ -4,7 +4,6 @@ import { Button, Container, MainHeading } from "../../GlobalStyles";
 import {
   HeroImage,
   HeroSection,
-  HeroText,
   ButtonWrapper,
 } from "./HeroStyles";
 
