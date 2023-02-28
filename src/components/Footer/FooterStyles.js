@@ -83,8 +83,8 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
+align-items:flex-end;
   margin: 16px;
-  text-align: left;
   box-sizing: border-box;
   color: #fff;
   @media screen and (max-width: 1000px) {

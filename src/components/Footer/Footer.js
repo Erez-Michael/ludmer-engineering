@@ -14,20 +14,20 @@ import {
 } from "./FooterStyles";
 import { footerData, footerSocialData } from "../../data/FooterData";
 import { Row, Section } from "../../GlobalStyles";
-
+import Logo from "../Logo/Logo";
 function Footer() {
   return (
     <Section padding="4rem 0 2rem 0">
       <FooterWrapper>
+            <FooterAddress>
+              4008 Notre-Dame St W, Montreal, QC H4C 1R1
+            </FooterAddress>
         <FooterGrid justify="space-between">
           <FooterColumn id="footerLogo">
             <FooterLogo to="/">
-              <SocialIcon src="./assets/logo.png" />
-              Delta
+              <SocialIcon />
+              <Logo />
             </FooterLogo>
-            <FooterAddress>
-              69 Street, Delta Building, US Road, Los Angeles 123
-            </FooterAddress>
 
             <Row align="center" margin="auto  0 0 0" gap="1rem">
               {footerSocialData.map((social, index) => (
@@ -53,7 +53,9 @@ function Footer() {
             </FooterLinkItems>
           ))}
         </FooterGrid>
-        <FooterRights>Delta © 2021</FooterRights>
+        <FooterRights>
+          © Ludmer Engineering | 2023 | All rights reserved
+        </FooterRights>
       </FooterWrapper>
     </Section>
   );
