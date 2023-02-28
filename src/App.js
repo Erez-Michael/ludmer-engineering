@@ -4,6 +4,7 @@ import GlobalStyles from "./GlobalStyles";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer2 from "./components/Footer/Footer2";
+import ScrollTop from "./components/Buttons/ScrollTop"
 
 //Pages English
 import Home from "./pages/Home";
@@ -32,6 +33,7 @@ const App = () => {
 
         <Route path="/accueil" element={<HomeFrench />} />
       </Routes>
+      <ScrollTop />
       <Footer2 />
     </BrowserRouter>
   );

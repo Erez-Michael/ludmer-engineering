@@ -18,7 +18,7 @@ const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Section margin="0 10%" maxWidth="1280px" padding="50px 70px" inverse>
+    <Section margin="0 10%"  padding="50px 70px" inverse>
       <Row justify="space-between" direction="column" margin="4rem 0" wrap="wrap">
         <ContainerTop>
           <StyledContentTopTwo>Our&nbsp;</StyledContentTopTwo>

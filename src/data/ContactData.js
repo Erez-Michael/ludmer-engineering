@@ -2,10 +2,12 @@ export const ContactData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "In the heart of Montreal",
+    text: "Located in the South West of Montreal",
   },
   headline: "Get in touch",
   description: "8am - 5 pm | Monday - Friday",
+  email: "admin@ludmer-engineering.ca",
+  address: "4008 Notre-Dame St W, Montreal, QC H4C 1R1",
   buttonLabel: "View Project",
   imgStart: "",
   img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738138/Ludmer%20Engineering/Project%203/img1.jpg",

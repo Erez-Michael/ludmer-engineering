@@ -1,36 +1,42 @@
 import React from "react";
 import styled from "styled-components";
 
-const Footer = () => {
+const Footer2 = () => {
   return (
-    <Conatiner>
+    <Container>
       <div>
-        <p> © Ludmer Engineering | All rights reserved.</p>
+        <p> © Ludmer Engineering | 2023 | All rights reserved.</p>
       </div>
-    </Conatiner>
+    </Container>
   );
 };
 
-const Conatiner = styled.div`
-  width: 100%;
-  padding: 50px 0;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(245, 222, 179, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
+const Container = styled.div`
 
+  width: 100%;
+  padding: 40px 0;
+  background-color: #071c2f;
   div {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     font-weight: 600;
+    border-top: #435f7b solid 1px;
+    margin: 20px 20%;
   }
-  @media screen and (max-width: 767px) {
-    font-size: x-small;
+  p {
+    color: whitesmoke;
+    background-color: #071c2f;
+    margin-top: -10px;
+    z-index: 10;
+    padding: 0 15px;
   }
+  @media screen and (max-width: 1024px) {
+display:flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
 `;
-export default Footer;
+export default Footer2;
