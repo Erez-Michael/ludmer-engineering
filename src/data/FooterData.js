@@ -6,6 +6,7 @@ import {
 
 const iconStyle = (Icon) => <Icon />;
 
+
 export const footerSocialData = [
   
   {

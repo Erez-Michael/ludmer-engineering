@@ -3,31 +3,32 @@ export const data = [
     title: "What our clients say",
     description:
       "Our clients happily stay with our services for more several years now. See real reviews from our clients.",
-    image: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738133/Ludmer%20Engineering/Project%201/IMG_5040_vyluwb.jpg",
+    image:
+      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738133/Ludmer%20Engineering/Project%201/IMG_5040_vyluwb.jpg",
   },
   {
-    title: "Our security ",
+    title: "Lorem",
     description:
-      "Learn more about our security systems to make sure your data is always safe",
+      "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rer",
     image: "./assets/security.jpg",
   },
   {
-    title: "Our Team",
+    title: "Lorem",
     description:
-      "Our team consists of the best experts in the industry, learn about them",
-    image: "./assets/teamwork.jpg",
+      "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rer",
+    image: "",
   },
   {
-    title: "Our servers",
-    description: "Find more about hardware and software used for your service",
-    image:
-      "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?cs=srgb&dl=pexels-manuel-geissinger-325229.jpg&fm=jpg",
+    title: "Lorem",
+    description:
+      "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rer",
+    image: "",
   },
   {
-    title: "Our top clients",
-    description: "We have provided services to top clients in tech industry",
-    image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+    title: "Lorem",
+    description:
+      "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rery",
+    image: "",
   },
 ];
 
