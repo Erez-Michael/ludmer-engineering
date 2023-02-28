@@ -25,7 +25,7 @@ export const MainHeading = styled.h1`
   margin-bottom: 2rem;
   /* Because styles are wrapper in backticks, everything in  between is considered a string. Therefore, when you use ${{}} it becomes vanilla JS and {()} is a functional component and insidea props is passed */
   color: #15202b;
-  margin-top: 100px;
+  margin-top: 130px;
   width: 100%;
   letter-spacing: 4px;
   backdrop-filter: blur(3px);

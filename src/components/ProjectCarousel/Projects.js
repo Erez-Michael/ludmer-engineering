@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import { data, sliderSettings } from "../../data/CarouselData";
+import { data, sliderSettings } from "../../data/ProjectData";
 import { Row, Section, TextWrapper } from "../../GlobalStyles";
 import {
   ContainerTop,

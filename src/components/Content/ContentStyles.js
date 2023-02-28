@@ -57,6 +57,12 @@ export const ImgWrapper = styled(motion.div)`
   z-index: -1;
 `;
 
+export const StyledMap = styled(motion.div)`
+  width: 40vw;
+  height: 50vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+`;
 
 export const TopLine = styled(motion.div)`
   font-size: 0.9rem;
