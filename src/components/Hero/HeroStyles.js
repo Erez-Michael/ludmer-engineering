@@ -2,11 +2,10 @@ import styled from "styled-components";
 import { Button } from "../../GlobalStyles";
 
 export const HeroSection = styled.section`
-  height: 80vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
-  padding-top: clamp(70px, 25vh, 220px);
-  box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
+  padding-top: clamp(70px, 35vh, 220px);
   @media screen and (max-width: 640px) {
   height: 60vh;
   }
@@ -24,6 +23,7 @@ export const HeroImage = styled.image`
     background-size: cover;
   }
   @media screen and (min-width: 1536px) {
+    width: 100%;
   }
   @media screen and (max-width: 640px) {
   }

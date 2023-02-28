@@ -40,7 +40,7 @@ export const MainHeading = styled.h1`
 
   @media screen and (max-width: 375px) {
     font-size: 20px;
-    margin-top: 210px;
+    margin-top: 180px;
   }
 
   span {
