@@ -30,13 +30,7 @@ export const StyledContentTopThree = styled.div`
   font-size: xx-large;
   font-size: 60px;
   font-weight: 700;
-  background-image: linear-gradient(45deg, #009966, #f3ec78);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  
  
   @media screen and (max-width: 768px) {
     font-size: 50px;

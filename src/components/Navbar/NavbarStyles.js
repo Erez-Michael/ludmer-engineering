@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink as BaseNavLink } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
   z-index: 999 !important;
@@ -9,8 +9,8 @@ export const NavbarContainer = styled.nav`
   background: rgb(255, 255, 255);
   background: linear-gradient(
     20deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(63, 92, 122, 0.9) 42%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(63, 92, 122, 1) 42%,
     rgba(3, 41, 80, 1) 100%
   );
   display: flex;
@@ -65,19 +65,31 @@ export const RightContainer = styled.div`
   }
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(BaseNavLink)`
   color: white;
   font-size: 1rem;
   text-decoration: none;
   margin: 10px;
   transition: all 0.2s ease-in-out;
   :hover {
-    color: #009966;
+    background-image: linear-gradient(45deg, #009966, #f3ec78);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     transition: all 0.2s ease-in-out;
     transform: scale(1.09);
   }
   &.active {
-    color: #009966;
+    background-image: linear-gradient(45deg, #009966, #f3ec78);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     font-weight: 900;
     font-size: 1.2rem;
   }

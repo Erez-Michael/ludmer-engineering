@@ -7,28 +7,32 @@ export const data = [
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738133/Ludmer%20Engineering/Project%201/IMG_5040_vyluwb.jpg",
   },
   {
-    title: "Lorem",
+    title: "2",
     description:
       "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rer",
-    image: "./assets/security.jpg",
+    image:
+      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%202/IMG_5123_sgu4v6.jpg",
   },
   {
-    title: "Lorem",
+    title: "3",
     description:
       "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rer",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738132/Ludmer%20Engineering/Project%203/img3.jpg",
   },
   {
-    title: "Lorem",
+    title: "4",
     description:
       "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rer",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%204/IMG_5241_ufqieb.jpg",
   },
   {
-    title: "Lorem",
+    title: "5",
     description:
       "t facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rery",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738131/Ludmer%20Engineering/Project%205/dupre_et_brillon_4803_w3av3b.jpg",
   },
 ];
 
