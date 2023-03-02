@@ -40,6 +40,8 @@ export const Content = ({
     }
   }, [inView, animation]);
 
+  
+
   return (
     <Section inverse={inverse} ref={ref}>
       <Container>
@@ -69,16 +71,17 @@ export const Content = ({
               >
                 {description}
               </Subtitle>
-              <ContentButton
+             {/*<ContentButton
                 initial={initial}
+                </TextWrapper>
                 transition={{ delay: 1, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
                 primary={primary}
               >
                 {buttonLabel}
-              </ContentButton>
-            </TextWrapper>
+              </ContentButton>*/}
+          </TextWrapper>
           </ContentColumn>
           <ContentColumn
             initial={initial}

@@ -21,11 +21,11 @@ const Hero = () => {
           Where contractors go for <span>eficient&nbsp;</span>
           design
         </MainHeading>
-        <ButtonWrapper>
+        {/*<ButtonWrapper>
           <NavLink to="about">
             <Button>Learn more</Button>
           </NavLink>
-        </ButtonWrapper>
+  </ButtonWrapper>*/}
       </Container>
     </HeroSection>
   );
