@@ -12,13 +12,13 @@ import {
   ImageWrapper,
   CarouselImage,
   CardButton,
-} from "./ProjectStyles";
+} from "./ProjectPageStyles";
 
 const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Section margin="0 10%"  padding="50px 70px" inverse>
+    <Section margin="0 10%" padding="50px 70px" inverse>
       <Row justify="space-between" direction="column" margin="4rem 0" wrap="wrap">
         <ContainerTop>
           <StyledContentTopTwo>Our&nbsp;</StyledContentTopTwo>
@@ -42,7 +42,7 @@ const Carousel = () => {
             <TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
               {el.description}
             </TextWrapper>
-            <CardButton to="./Projects">View Projects</CardButton>
+            <CardButton to={el.location}>View Projects</CardButton>
           </ImageWrapper>
         ))}
       </ReviewSlider>
