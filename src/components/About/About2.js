@@ -87,7 +87,6 @@ const StyledContentTopOne = styled.div`
   font-size: 25px;
 `;
 const StyledContentTopTwo = styled.div`
-  height: 120px;
   display: flex;
   align-items: flex-end;
   justify-content: center;

@@ -34,16 +34,16 @@ const Carousel = () => {
       </Row>
 
       <ReviewSlider {...sliderSettings} ref={setSliderRef}>
-        {data.map((el, index) => (
+        {data.map((e, index) => (
           <ImageWrapper key={index}>
-            <CarouselImage src={el.image} />
-            <TextWrapper size="1.1rem" margin="0.4rem 0 0" weight="bold">
-              {el.title}
-\send            </TextWrapper>
-            <TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
-              {el.description}
+            <CarouselImage src={e.image} />
+            <TextWrapper size="1.5rem" margin="1.8rem 0 0" weight="bold" >
+              {e.title}
             </TextWrapper>
-            <CardButton to={el.location}>View Projects</CardButton>
+            {/*<TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
+              {e.description}
+        </TextWrapper>*/}
+            <CardButton to={e.navigateTo}>View Projects</CardButton>
           </ImageWrapper>
         ))}
       </ReviewSlider>
