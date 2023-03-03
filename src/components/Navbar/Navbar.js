@@ -22,6 +22,10 @@ const Header = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
 
+  const closeNavbar = () => {
+    setExtendNavbar(false);
+  };
+
   const handleMouseEnter = () => {
     setIsHovering(true);
   };
@@ -73,7 +77,7 @@ const Header = () => {
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtendedOne to="/">Home</NavbarLinkExtendedOne>
+          <NavbarLinkExtendedOne onMenuItemSelect={closeNavbar} to="/">Home</NavbarLinkExtendedOne>
           <NavbarLinkExtendedTwo to="/about">About</NavbarLinkExtendedTwo>
           <NavbarLinkExtendedThree to="/projects">
             Projects

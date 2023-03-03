@@ -121,7 +121,20 @@ export const NavbarExtendedContainer = styled.div`
   z-index: 9 !important;
 `;
 
-export const NavbarLinkExtendedOne = styled(Link)`
+export const MenuLink = ({ children, onMenuItemSelect, to, className }) => {
+  const onClick = () => {
+    onMenuItemSelect();
+  };
+  return (
+    <Link to={to} onClick={onClick} className={className}>
+      {children}
+
+    </Link>
+  );
+
+};
+
+export const NavbarLinkExtendedOne = styled(MenuLink)`
   color: whitesmoke;
   font-size: large;
   text-decoration: none;
@@ -141,7 +154,7 @@ export const NavbarLinkExtendedOne = styled(Link)`
   }
 `;
 
-export const NavbarLinkExtendedTwo = styled(Link)`
+export const NavbarLinkExtendedTwo = styled(MenuLink)`
   color: whitesmoke;
   font-size: large;
   text-decoration: none;

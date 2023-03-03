@@ -13,7 +13,6 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/ContactPage";
 
 // Projects
-
 import ProjectOne from "./components/ProjectCarousel/Projects/ProjectOne";
 import ProjectTwo from "./components/ProjectCarousel/Projects/ProjectTwo";
 import ProjectThree from "./components/ProjectCarousel/Projects/ProjectThree";

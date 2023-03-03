@@ -18,6 +18,7 @@ const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
+    
     <Section margin="0 10%" padding="50px 70px" inverse>
       <Row justify="space-between" direction="column" margin="4rem 0" wrap="wrap">
         <ContainerTop>
@@ -38,7 +39,7 @@ const Carousel = () => {
             <CarouselImage src={el.image} />
             <TextWrapper size="1.1rem" margin="0.4rem 0 0" weight="bold">
               {el.title}
-            </TextWrapper>
+\send            </TextWrapper>
             <TextWrapper size="0.9rem" margin="0.7rem" color="#4f4f4f">
               {el.description}
             </TextWrapper>
