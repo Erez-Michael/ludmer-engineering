@@ -12,7 +12,7 @@ const Footer2 = () => {
 };
 
 const Container = styled.div`
-
+  border-top: solid #435f7b 0.1rem;
   width: 100%;
   padding: 40px 0;
   background-color: #071c2f;
@@ -33,10 +33,10 @@ const Container = styled.div`
     padding: 0 15px;
   }
   @media screen and (max-width: 1024px) {
-display:flex;
-justify-content: center;
-text-align: center;
-align-items: center;
-}
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 `;
 export default Footer2;

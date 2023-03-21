@@ -8,9 +8,7 @@ const About = () => {
         <ContainerTop>
           <StyledContentTopOne>/ About us</StyledContentTopOne>
           <StyledContentTopTwo>Where passion meets</StyledContentTopTwo>
-          <StyledContentTopThree>
-             experience.
-          </StyledContentTopThree>
+          <StyledContentTopThree>experience.</StyledContentTopThree>
         </ContainerTop>
         <Container>
           <StyledContentImg>
@@ -20,9 +18,9 @@ const About = () => {
             <h3>/ Mission Statement</h3>
             <p>
               Ludmer engineering is a fledgling firm, borne of the necessity to
-              provide efficeint design tailored to the needs of builders and
-              contractors. For every project undertaken, we are committed to
-              providing a direct design approach for the most efficient
+              provide efficient design tailored to the needs of builders and
+              contractors. For every project we undertake, we are committed to
+              providing a direct design approach and find the most efficient
               solution.
             </p>
           </StyledContentInfoOne>
@@ -31,15 +29,17 @@ const About = () => {
           <StyledContentInfoTwo>
             <h3>/ Innovation & excellence</h3>
             <p>
-              Our objective is to complete field recon to fully understand soil
-              conditions, other relevant site conditions and glean any other
-              information already collected by the client. Simply put we follow
-              engeineering guidelines and codes when available, however due to
-              20+ years of experience we are able to innovate when faced with
-              unlikely and unusual scenarios. We love a new challenge, and revel
-              in meeting or exceeding clients expectations and we certainly
-              won't cower away from getting our hands dirty. We pride ourselves
-              on being equipped with state of the art technologies and have
+              Our first objective to complete a full assessment of the project
+              at hand. Be it a desktop study, a site visit to fully understand
+              soil conditions, or other relevant site conditions, we do the
+              necessary to glean all relevant information already collected or
+              made available to us by the client. We follow engineering
+              guidelines and codes when available, however due to 20+ years of
+              experience, we are able to innovate when faced with unlikely and
+              unusual scenarios. We love a new challenge and revel in the
+              metting or exceeding the clients expectations. And we certainly
+              won’t cower away from getting our hands dirty. We pride ourselves
+              on being equipped with state of the art technology and we have
               diligent and passionate people behind every project.
             </p>
           </StyledContentInfoTwo>

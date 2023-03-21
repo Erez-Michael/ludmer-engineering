@@ -128,7 +128,6 @@ export const MenuLink = ({ children, onMenuItemSelect, to, className }) => {
   return (
     <Link to={to} onClick={onClick} className={className}>
       {children}
-
     </Link>
   );
 

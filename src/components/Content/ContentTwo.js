@@ -1,24 +1,27 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { Container, Section } from "../../GlobalStyles";
 import {
   ContentRow,
   TextWrapper,
   TopLine,
-    Heading,
-  MainTitle,
+  Heading,
+  ContentButton,
   Subtitle,
   ImgWrapper,
   Img,
-  ContentColumn,
-} from "./AboutStyles.js";
+  ContentColumn
+} from "./ContentStyles.js";
 
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 
-export const AboutContent = ({
+export const ContentTwo = ({
+  primary,
   topLine,
   headline,
   description,
+  buttonLabelProjects,
   img,
   alt,
   inverse,
@@ -37,24 +40,16 @@ export const AboutContent = ({
       });
     }
   }, [inView, animation]);
+    
+     const Style = {
+       textDecoration: "none",
+       color: "whitesmoke",
+     };
 
   return (
     <Section inverse={inverse} ref={ref}>
       <Container>
         <ContentRow reverse={reverse}>
-          <ContentColumn
-            initial={initial}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            animate={animation}
-          >
-            <ImgWrapper>
-              <Img
-                src={img}
-                alt={alt}
-        
-              />
-            </ImgWrapper>
-          </ContentColumn>
           <ContentColumn>
             <TextWrapper>
               <TopLine
@@ -80,7 +75,26 @@ export const AboutContent = ({
               >
                 {description}
               </Subtitle>
+              <ContentButton
+                initial={initial}
+                transition={{ delay: 1, duration: 0.6 }}
+                animate={animation}
+                inverse={inverse}
+                primary={primary}
+              >
+                              <NavLink to="/projects"
+                              style={Style}>{buttonLabelProjects}</NavLink>
+              </ContentButton>
             </TextWrapper>
+          </ContentColumn>
+          <ContentColumn
+            initial={initial}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            animate={animation}
+          >
+            <ImgWrapper>
+              <Img src={img} alt={alt} />
+            </ImgWrapper>
           </ContentColumn>
         </ContentRow>
       </Container>

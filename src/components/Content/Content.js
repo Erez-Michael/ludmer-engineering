@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom" 
 import { Container, Section } from "../../GlobalStyles";
 import {
   ContentRow,
@@ -9,7 +10,7 @@ import {
   Subtitle,
   ImgWrapper,
   Img,
-  ContentColumn,
+  ContentColumn
 } from "./ContentStyles.js";
 
 import { useInView } from "react-intersection-observer";
@@ -40,7 +41,10 @@ export const Content = ({
     }
   }, [inView, animation]);
 
-  
+ const Style = {
+   textDecoration: "none",
+   color: "#0c4577",
+ };
 
   return (
     <Section inverse={inverse} ref={ref}>
@@ -71,17 +75,20 @@ export const Content = ({
               >
                 {description}
               </Subtitle>
-             {/*<ContentButton
+              <ContentButton
                 initial={initial}
-                </TextWrapper>
                 transition={{ delay: 1, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
-                primary={primary}
               >
-                {buttonLabel}
-              </ContentButton>*/}
-          </TextWrapper>
+                <NavLink
+                  to="/about"
+                 style={Style}
+                >
+                  {buttonLabel}
+                </NavLink>
+              </ContentButton>
+            </TextWrapper>
           </ContentColumn>
           <ContentColumn
             initial={initial}
@@ -89,12 +96,7 @@ export const Content = ({
             animate={animation}
           >
             <ImgWrapper>
-              <Img
-                src={img}
-                alt={alt}
-                whileHover={{ rotate: 2, scale: 1.02 }}
-                transition={{ duration: 0.5 }}
-              />
+              <Img src={img} alt={alt} />
             </ImgWrapper>
           </ContentColumn>
         </ContentRow>

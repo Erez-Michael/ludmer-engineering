@@ -1,10 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Button, Container, MainHeading } from "../../GlobalStyles";
+import { Container, MainHeading } from "../../GlobalStyles";
 import {
   HeroImage,
   HeroSection,
-  ButtonWrapper,
 } from "./HeroStyles";
 
 const Hero = () => {
@@ -18,14 +16,10 @@ const Hero = () => {
       </HeroImage>
       <Container>
         <MainHeading>
-          Where contractors go for <span>eficient&nbsp;</span>
+          Where contractors go for <span>efficient&nbsp;</span>
           design
         </MainHeading>
-        {/*<ButtonWrapper>
-          <NavLink to="about">
-            <Button>Learn more</Button>
-          </NavLink>
-  </ButtonWrapper>*/}
+     
       </Container>
     </HeroSection>
   );

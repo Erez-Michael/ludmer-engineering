@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 
 export const ContainerTop = styled.div`
   position: relative;
-  left: 25px;
-  top: 30px;
+  top: 35px;
   display: flex;
- 
+ justify-content: center;
 `;
 
 
@@ -77,31 +76,31 @@ export const CarouselImage = styled.img`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 90%;
   display: flex !important;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  outline: none;
   height: 430px;
   @media screen and (min-width: 440px) {
     border: 1px solid #bebebe;
   }
 `;
 
-export const ButtonContainer = styled(Row)`
+export const ArrowWrapper = styled.div`
   display: flex;
+  justify-content: space-between;
+margin-top: 50px;
+padding: 0 50px;
+`;
+
+export const ButtonContainer = styled(Row)`
   position: relative;
-  justify-content: flex-end;
-  & svg {
-    margin: 0 1rem;
-    margin-top: 3rem;
-    cursor: pointer;
-  }
+  cursor: pointer;
+
   & svg:hover {
-    opacity: 0.7;
-    transition: opacity 0.2s ease-in;
+    opacity: 0.8;
+    transition: 0.25s ease-in-out;
   }
   @media screen and (max-width: 768px) {
 justify-content:center;
@@ -109,6 +108,7 @@ margin-bottom: -30px;
 margin-top: 20px;
   }
 `;
+export const ButtonContainerTwo = styled(ButtonContainer)``;
 
 export const ReviewSlider = styled(Slider)`
   width: 100%;
@@ -120,7 +120,6 @@ export const ReviewSlider = styled(Slider)`
   .slick-slide {
     display: flex;
     justify-content: center;
-    margin-bottom: 1;
     outline: none;
   }
   .slick-list {
@@ -142,7 +141,8 @@ export const CardButton = styled(Link)`
   border: none;
   border-radius: 0 0 10px 10px;
   &:hover {
-    background-color: #112f4a;
-    transition: background-color 0.2s ease-in;
+    background-color: #3f7aa6;
+    transition: background-color 0.25s ease-in-out;
   }
+
 `;
