@@ -46,9 +46,10 @@ const Button = styled.div`
   background-image: linear-gradient(45deg, #009966, #f3ec78);
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     font-size: 2rem;
     left: 85%;
+    bottom: 10%;
   }
 `;
 

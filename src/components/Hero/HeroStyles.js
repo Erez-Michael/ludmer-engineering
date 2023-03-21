@@ -3,11 +3,21 @@ import { Button } from "../../GlobalStyles";
 
 export const HeroSection = styled.section`
   height: 100vh;
-  background-position: center;
+
+background-position: center;
   background-size: cover;
   padding-top: clamp(70px, 35vh, 220px);
+  @media screen and (max-width: 1268px) {
+    height: 92vh;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 72vh;
+  }
+  @media screen and (max-width: 768px) {
+    height: 62vh;
+  }
   @media screen and (max-width: 640px) {
-  height: 60vh;
+    height: 55vh;
   }
 `;
 
@@ -25,7 +35,23 @@ export const HeroImage = styled.image`
   @media screen and (min-width: 1536px) {
     width: 100%;
   }
+ 
+`;
+
+export const Wrapper = styled.div`
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    top: -30%;
+  }
+  @media screen and (max-width: 768px) {
+    top: -40%;
+  }
   @media screen and (max-width: 640px) {
+    top: -75%;
+  }
+  @media screen and (max-width: 425px) {
+    top: -90%;
   }
 `;
 
@@ -44,7 +70,6 @@ export const ButtonWrapper = styled.div`
   flex-flow: wrap;
   gap: 0.5rem;
   @media screen and (max-width: 640px) {
-display:none;    
   }
 `;
 

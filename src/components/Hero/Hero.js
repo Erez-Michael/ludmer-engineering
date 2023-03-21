@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, MainHeading } from "../../GlobalStyles";
-import {
-  HeroImage,
-  HeroSection,
-} from "./HeroStyles";
+import { HeroImage, HeroSection, Wrapper } from "./HeroStyles";
 
 const Hero = () => {
   return (
@@ -14,13 +11,14 @@ const Hero = () => {
           alt="crane-image"
         />
       </HeroImage>
-      <Container>
-        <MainHeading>
-          Where contractors go for <span>efficient&nbsp;</span>
-          design
-        </MainHeading>
-     
-      </Container>
+      <Wrapper>
+        <Container>
+          <MainHeading>
+            Where contractors go for <span>efficient&nbsp;</span>
+            design
+          </MainHeading>
+        </Container>
+      </Wrapper>
     </HeroSection>
   );
 };

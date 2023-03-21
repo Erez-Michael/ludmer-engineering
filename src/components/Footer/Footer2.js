@@ -12,6 +12,7 @@ const Footer2 = () => {
 };
 
 const Container = styled.div`
+
   border-top: solid #435f7b 0.1rem;
   width: 100%;
   padding: 40px 0;
@@ -38,5 +39,7 @@ const Container = styled.div`
     text-align: center;
     align-items: center;
   }
+  @media screen and (max-width: 768px) {
+}
 `;
 export default Footer2;

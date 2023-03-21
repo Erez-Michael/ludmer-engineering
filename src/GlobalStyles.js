@@ -12,19 +12,16 @@ const GlobalStyles = createGlobalStyle`
 export const Container = styled.div`
   width: 100%;
   max-width: 1300px;
-  margin: 55px auto 0 auto;
+  margin: 180px auto 0 auto;
   padding: 0 50px;
   @media screen and (max-width: 960px) {
-    padding: 0 30px;
   }
 `;
 export const MainHeading = styled.h1`
-  font-size: clamp(2.3rem, 3vw, 4.5rem);
+font-size: clamp(2.3rem, 3vw, 4.5rem);
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/clamp */
-  margin-bottom: 2rem;
   /* Because styles are wrapper in backticks, everything in  between is considered a string. Therefore, when you use ${{}} it becomes vanilla JS and {()} is a functional component and insidea props is passed */
   color: #15202b;
-  margin-top: 180px;
   width: 100%;
   letter-spacing: 4px;
   backdrop-filter: blur(3px);
@@ -32,7 +29,6 @@ export const MainHeading = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 28px;
-    margin-top: 200px;
   }
 
   @media screen and (max-width: 375px) {
