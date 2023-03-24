@@ -21,7 +21,7 @@ export const heroTwo = {
   },
   headline: "Why us? ",
   description:
-    "We use state of the art design tools. Our experience with a vast array of clients allows us to stay on top of the best construction methodologies",
+    "We use state of the art design tools. Our experience with a vast array of clients allows us to stay on top of the latest products and best construction techniques.",
   buttonLabelProjects: "View Projects",
 
   linkTo: "/contact",

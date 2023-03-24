@@ -3,6 +3,14 @@ import { Row } from "../../GlobalStyles";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 
+export const Spinner = styled.span`
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px);
+`;
+
 export const ContainerTop = styled.div`
   position: relative;
   top: 35px;

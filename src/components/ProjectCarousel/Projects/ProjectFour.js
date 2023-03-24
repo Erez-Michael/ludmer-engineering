@@ -1,7 +1,7 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
-// Geological consolidation
+// Rock Mechanics
 
 const ProjectFour = () => {
   const galleryImages = [

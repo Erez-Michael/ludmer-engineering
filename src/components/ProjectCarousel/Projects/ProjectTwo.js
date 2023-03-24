@@ -1,7 +1,7 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
-// Consolidation
+// Retrofiting & Underpinning
 
 const ProjectTwo = () => {
   const galleryImages = [
@@ -17,6 +17,7 @@ const ProjectTwo = () => {
     {
       img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738135/Ludmer%20Engineering/Project%202/IMG_49601_k2hyyw.jpg",
     },
+    
   ];
 
   return (

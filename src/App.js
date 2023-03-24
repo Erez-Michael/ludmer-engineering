@@ -15,7 +15,6 @@ import Contact from "./pages/ContactPage";
 // Projects
 import ProjectOne from "./components/ProjectCarousel/Projects/ProjectOne";
 import ProjectTwo from "./components/ProjectCarousel/Projects/ProjectTwo";
-import ProjectThree from "./components/ProjectCarousel/Projects/ProjectThree";
 import ProjectFour from "./components/ProjectCarousel/Projects/ProjectFour";
 import ProjectFive from "./components/ProjectCarousel/Projects/ProjectFive";
 
@@ -38,11 +37,10 @@ const App = () => {
 
         {/* Projects */}
 
-        <Route path="/Retrofiting" element={<ProjectOne />} />
-        <Route path="/Consolidation" element={<ProjectTwo />} />
-        <Route path="/Geotechnical" element={<ProjectThree />} />
-        <Route path="/Geological consolidation" element={<ProjectFour />} />
-        <Route path="/Construction" element={<ProjectFive />} />
+        <Route path="/Retrofiting+Underpinning" element={<ProjectOne />} />
+        <Route path="/Geotechnical-engineering" element={<ProjectTwo />} />
+        <Route path="/Rock-Mechanics" element={<ProjectFour />} />
+        <Route path="/Shoring-design" element={<ProjectFive />} />
 
         {/* FRANÇAIS */}
 

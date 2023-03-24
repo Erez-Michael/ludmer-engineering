@@ -1,7 +1,7 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
-// Construction
+// Shoring Design
 
 const ProjectFive = () => {
   const galleryImages = [

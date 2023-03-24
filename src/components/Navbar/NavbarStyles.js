@@ -10,7 +10,7 @@ export const NavbarContainer = styled.nav`
   background: linear-gradient(
     20deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(63, 92, 122, 1) 42%,
+    rgba(63, 92, 122, 1) 40%,
     rgba(3, 41, 80, 1) 100%
   );
   display: flex;
