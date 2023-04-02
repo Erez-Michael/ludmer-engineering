@@ -160,7 +160,7 @@ export const ReviewSlider = styled(Slider)`
     }
   }
 `;
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(Link)`
   display: flex !important;
   justify-content: center;
   align-items: center;
