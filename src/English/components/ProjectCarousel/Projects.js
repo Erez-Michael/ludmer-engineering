@@ -38,7 +38,7 @@ const Carousel = () => {
     return (
       <>
         <Navbar/>
-      <Section margin="0 10%" padding="50px 0px" inverse>
+      <Section margin="0 10%" padding="8rem 0px" inverse>
         <Row
           justify="space-between"
           direction="column"

@@ -46,46 +46,50 @@ const ProjetsFr = () => {
   } else {
     return (
       <>
-      <NavbarFr/>
-      <Section margin="0 10%" padding="50px 0px" inverse>
-        <Row
-          justify="space-between"
-          direction="column"
-          margin="4rem 0"
-          wrap="wrap"
+        <NavbarFr />
+        <Section margin="0 10%" padding="8rem 0" inverse>
+          <Row
+            justify="space-between"
+            direction="column"
+            margin="4rem 0"
+            wrap="wrap"
           >
-          <ContainerTop>
-            <StyledContentTopTwo>Our&nbsp;</StyledContentTopTwo>
-            <StyledContentTopThree>Projects</StyledContentTopThree>
-          </ContainerTop>
+            <ContainerTop>
+              <StyledContentTopTwo>Nos&nbsp;</StyledContentTopTwo>
+              <StyledContentTopThree>réalisations</StyledContentTopThree>
+            </ContainerTop>
 
-          <ArrowWrapper>
-            <ButtonContainer>
-              <IconContext.Provider value={{ size: "3rem", color: "#325272" }}>
-                <FaArrowCircleLeft onClick={sliderRef?.slickPrev} />
-              </IconContext.Provider>
-            </ButtonContainer>
-            <ButtonContainerTwo>
-              <IconContext.Provider value={{ size: "3rem", color: "#325272" }}>
-                <FaArrowCircleRight onClick={sliderRef?.slickNext} />
-              </IconContext.Provider>
-            </ButtonContainerTwo>
-          </ArrowWrapper>
-        </Row>
+            <ArrowWrapper>
+              <ButtonContainer>
+                <IconContext.Provider
+                  value={{ size: "3rem", color: "#325272" }}
+                >
+                  <FaArrowCircleLeft onClick={sliderRef?.slickPrev} />
+                </IconContext.Provider>
+              </ButtonContainer>
+              <ButtonContainerTwo>
+                <IconContext.Provider
+                  value={{ size: "3rem", color: "#325272" }}
+                >
+                  <FaArrowCircleRight onClick={sliderRef?.slickNext} />
+                </IconContext.Provider>
+              </ButtonContainerTwo>
+            </ArrowWrapper>
+          </Row>
 
-        <ReviewSlider {...sliderSettings} ref={setSliderRef}>
-          {data.map((e, index) => (
-            <ImageWrapper key={index}>
-              <CarouselImage src={e.image} />
-              <TextWrapper size="1.4rem" margin="2rem 1rem" weight="bold">
-                {e.title}
-              </TextWrapper>
-              <CardButton to={e.navigateTo}>View Projects</CardButton>
-            </ImageWrapper>
-          ))}
-        </ReviewSlider>
-      </Section>
-          </>
+          <ReviewSlider {...sliderSettings} ref={setSliderRef}>
+            {data.map((e, index) => (
+              <ImageWrapper key={index}>
+                <CarouselImage src={e.image} />
+                <TextWrapper size="1.4rem" margin="2rem 1rem 4rem" weight="bold">
+                  {e.title}
+                </TextWrapper>
+                <CardButton to={e.navigateTo}>Voir Projet</CardButton>
+              </ImageWrapper>
+            ))}
+          </ReviewSlider>
+        </Section>
+      </>
     );
   }
 };

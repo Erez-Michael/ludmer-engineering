@@ -27,7 +27,7 @@ export const HeroSection = styled.section`
 
 export const HeroImage = styled.image`
   position: absolute;
-  top: 80px;
+  top: 120px;
   z-index: -1;
   img {
     width: 100%;
@@ -38,6 +38,9 @@ export const HeroImage = styled.image`
   }
   @media screen and (min-width: 1536px) {
     width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    top: 80px;
   }
 `;
 

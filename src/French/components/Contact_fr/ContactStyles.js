@@ -48,10 +48,7 @@ export const TextWrapper = styled.div`
 export const StyledMap = styled(motion.div)`
   max-width: 35vw;
   height: 50vh;
-  padding-top: 40px;
   padding-bottom: 0px;
-  @media (max-width: 1024px) {
-  }
   @media (max-width: 767px) {
     max-width: 80vw;
   }
@@ -94,7 +91,7 @@ export const Subtitle = styled(motion.p)`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: TextWrapper;
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;

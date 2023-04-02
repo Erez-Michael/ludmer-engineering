@@ -8,7 +8,6 @@ export const ContactData = {
   description: "8am - 5 pm | Monday - Friday",
   email: "admin@ludmer-engineering.ca",
   address: "4008 Notre-Dame St W, Montreal, QC H4C 1R1",
-  buttonLabel: "View Project",
   imgStart: "",
   img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738138/Ludmer%20Engineering/Project%203/img1.jpg",
   start: "true",

@@ -1,10 +1,14 @@
+//**********************************************//
+//**************** // FRENCH // ****************//
+//**********************************************//
+
 import styled from "styled-components";
 import { Button } from "../../../GlobalStyles";
 
 export const HeroSection = styled.section`
   height: 100vh;
 
-background-position: center;
+  background-position: center;
   background-size: cover;
   padding-top: clamp(70px, 35vh, 220px);
   @media screen and (max-width: 1268px) {
@@ -23,7 +27,7 @@ background-position: center;
 
 export const HeroImage = styled.image`
   position: absolute;
-  top: 80px;
+  top: 120px;
   z-index: -1;
   img {
     width: 100%;
@@ -35,7 +39,9 @@ export const HeroImage = styled.image`
   @media screen and (min-width: 1536px) {
     width: 100%;
   }
- 
+  @media screen and (max-width: 1024px) {
+    top: 80px;
+  }
 `;
 
 export const Wrapper = styled.div`

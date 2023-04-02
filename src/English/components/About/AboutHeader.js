@@ -12,11 +12,15 @@ const AboutHeader = () => {
 }
 
 const ContainerTop = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-padding-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 8rem;
+  margin-bottom: -4rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: -8rem;
+  }
 `;
 
 
@@ -28,10 +32,10 @@ const StyledContentTopTwo = styled.div`
     font-size: 50px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 45px;
   }
   @media screen and (max-width: 560px) {
-    font-size: 30px;
+    font-size: 35px;
   }
 `;
 

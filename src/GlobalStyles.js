@@ -67,7 +67,8 @@ export const TextWrapper = styled.span`
   margin: ${({ margin }) => (margin ? margin : "")};
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
-  
+  max-height: 1rem;
+  text-align: center;
 `;
 export const Section = styled.section`
   padding: ${({ padding }) => (padding ? padding : "140px 0")};
@@ -85,6 +86,9 @@ export const Section = styled.section`
   }
 `;
 
+export const AboutSection = styled(Section)`
+  padding: ${({ padding }) => (padding ? padding : "0 0")};
+`;
 export const Row = styled.div`
   display: flex;
   justify-content: ${({ justify }) => (justify ? justify : "")};

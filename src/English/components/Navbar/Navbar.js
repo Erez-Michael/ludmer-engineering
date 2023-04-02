@@ -34,12 +34,15 @@ const Header = () => {
     setIsHovering(false);
   };
 
+  // When the user scrolls down 50px from the top of the document, resize logo
+ 
+
   return (
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <StyledLogo>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <Logo />
+            <Logo  />
           </Link>
         </StyledLogo>
 
@@ -77,7 +80,9 @@ const Header = () => {
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtendedOne onMenuItemSelect={closeNavbar} to="/">Home</NavbarLinkExtendedOne>
+          <NavbarLinkExtendedOne onMenuItemSelect={closeNavbar} to="/">
+            Home
+          </NavbarLinkExtendedOne>
           <NavbarLinkExtendedTwo to="/about">About</NavbarLinkExtendedTwo>
           <NavbarLinkExtendedThree to="/projects">
             Projects

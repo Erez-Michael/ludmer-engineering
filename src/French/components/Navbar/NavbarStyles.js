@@ -7,6 +7,7 @@ import { Link, NavLink as BaseNavLink } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
   z-index: 999 !important;
+  opacity:0.85;
   position: fixed;
   width: 100%;
   height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};

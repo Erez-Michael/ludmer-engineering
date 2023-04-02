@@ -3,7 +3,7 @@
 //**********************************************//
 
 import React, { useEffect } from "react";
-import { Container, Section } from "../../../GlobalStyles";
+import { Container, AboutSection } from "../../../GlobalStyles";
 import {
   ContentRow,
   TextWrapper,
@@ -43,7 +43,7 @@ export const AboutContent = ({
   }, [inView, animation]);
 
   return (
-    <Section inverse={inverse} ref={ref}>
+    <AboutSection inverse={inverse} ref={ref}>
       <Container>
         <ContentRow reverse={reverse}>
           <ContentColumn
@@ -84,6 +84,6 @@ export const AboutContent = ({
           </ContentColumn>
         </ContentRow>
       </Container>
-    </Section>
+    </AboutSection>
   );
 };

@@ -85,7 +85,7 @@ export const Content = ({
                 animate={animation}
                 inverse={inverse}
               >
-                <NavLink to="/about" style={Style}>
+                <NavLink to="/a-propos" style={Style}>
                   {buttonLabel}
                 </NavLink>
               </ContentButton>

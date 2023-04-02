@@ -5,7 +5,7 @@
 export const data = [
   //Project One
   {
-    title: "Retrofitting & Underpinning",
+    title: "Transformation de batiment et sous oeuvre",
     description: "",
     image:
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738137/Ludmer%20Engineering/Project%201/IMG_5041_y3fvrc.jpg",
@@ -14,7 +14,7 @@ export const data = [
   //Project Two
 
   {
-    title: "Geotechnical Engineering",
+    title: "Géotechnique",
     description: "",
     image:
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%202/IMG_5123_sgu4v6.jpg",
@@ -23,7 +23,7 @@ export const data = [
   //Project Three
 
   {
-    title: "Rock Mechanics",
+    title: "Mécanique des roches",
     description: "",
     image:
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%204/IMG_5241_ufqieb.jpg",
@@ -32,7 +32,7 @@ export const data = [
   //Project Four
 
   {
-    title: "Shoring Design",
+    title: "Soutenement des terres",
     description: "",
     image:
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738131/Ludmer%20Engineering/Project%205/dupre_et_brillon_4803_w3av3b.jpg",

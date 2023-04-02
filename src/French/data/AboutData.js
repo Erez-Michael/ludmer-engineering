@@ -8,9 +8,9 @@ export const aboutOne = {
   topLine: {
     text: "",
   },
-  headline: "MISSION STATEMENT",
+  headline: "MISSION",
   description:
-    "Ludmer engineering is a fledgling firm, borne of the necessity to provide efficient design tailored to the needs of builders and contractors. For every project we undertake, we are committed to providing a direct design approach and find the most efficient solution.",
+    "Ludmer Engineering est une firme en effervescence, né du besoin de fournir des concepts d'ingénierie souvent de nature temporaire pour des entrepreneurs en plein projet. Pour chaque projet que nous amorçons, nous nous efforçons de trouver des solutions optimales autant pratique qu'économique.",
 
   img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1677007099/Engineer-tools_gdcl9k.jpg",
   start: "true",
@@ -24,7 +24,7 @@ export const aboutTwo = {
   },
   headline: "INNOVATION & EXCELLENCE",
   description:
-    "Our first objective is to complete a full assessment of the project, be it a desktop study, a site visit, to fully understand soil conditions, other relevant site conditions and glean any information already collected by the client. We follow engineering guidelines and codes when available, however due to 20+ years of experience we are able to innovate when faced with unlikely and unusual scenarios. We love a new challenge, and revel in meeting or exceeding the clients expectations and we certainly won't cower away from getting our hands dirty. We pride ourselves on being equipped with state of the art technology and have diligent and passionate people behind every project.",
+    "Notre premier objectif lors d'une intervention sur un projet en pré-construction ou en construction est de maitriser tous les intrants qui nous sont disponible. Nous sommes toujours prêt a venir sur place pour constater l'état actuel de l'ouvrage ou les conditions de sols. Nous sommes bien expérimentés dans les règlements et guides de pratique en ingénierie lorsque applicable. Cependant, quand nous faisons face à une situation qui n'est pas régie par un règlement en particulier, nous avons l'expérience et le jugement nécessaire pour trouver une approche sécuritaire et optimale afin de bien servir nos clients.",
   imgStart: "",
   img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1679416768/Ludmer%20Engineering/plan_ztpwbo.png",
   start: "true",

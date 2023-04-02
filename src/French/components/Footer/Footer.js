@@ -5,11 +5,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Footer2 = () => {
+const Footer = () => {
   return (
     <Container>
       <div>
-        <p> © Ludmer Engineering | 2023 | All rights reserved.</p>
+        <p> © Ludmer Engineering | 2023 | Tout droits réservés.</p>
       </div>
     </Container>
   );
@@ -19,6 +19,7 @@ const Container = styled.div`
   border-top: solid #435f7b 0.1rem;
   width: 100%;
   padding: 40px 0;
+  margin-top: 80px;
   background-color: #071c2f;
   div {
     display: flex;
@@ -45,4 +46,4 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
   }
 `;
-export default Footer2;
+export default Footer;

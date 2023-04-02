@@ -1,9 +1,27 @@
 import styled from "styled-components";
 
 const Logo = ({ className }) => {
+   window.onscroll = function () {
+     scrollFunction();
+   };
+
+   const scrollFunction = () => {
+     if (
+       document.body.scrollTop > 50 ||
+       document.documentElement.scrollTop > 50
+     ) {
+       document.getElementById("logo").style.scale = "0.8";
+     } else {
+       document.getElementById("logo").style.scale= "1";
+     }
+  };
+  
+  const style = {
+    transition:"1.5s"
+  }
   return (
     <>
-      <Container className={className}>
+      <Container id="logo" style={style} className={className}>
         <Wrapper className="parent">
           <Squares>
             <Top>
