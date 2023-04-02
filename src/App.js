@@ -37,7 +37,7 @@ const App = () => {
       <Routes>
         {/* ENGLISH */}
 
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -51,7 +51,7 @@ const App = () => {
 
         {/* FRANÇAIS */}
 
-        <Route path="/accueil" element={<HomePageFr />} />
+        <Route path="/" element={<HomePageFr />} />
         <Route path="/a-propos" element={<AboutPageFr />} />
         <Route path="/projets" element={<ProjectsPageFr />} />
         <Route path="/contact-fr" element={<ContactPageFr />} />

@@ -42,13 +42,13 @@ const NavbarFr = () => {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <StyledLogo>
-          <Link to="/accueil" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <Logo />
           </Link>
         </StyledLogo>
 
         <RightContainer>
-          <NavLink to="/accueil">Accueil</NavLink>
+          <NavLink to="/">Accueil</NavLink>
           <NavLink to="/a-propos">À propos</NavLink>
           <NavLink to="/projets">Réalisations</NavLink>
           <NavLink to="/contact-fr">Contact</NavLink>
@@ -68,8 +68,8 @@ const NavbarFr = () => {
               onMouseLeave={handleMouseLeave}
             />
           </NavLink>
-          <NavLink to="/accueil">FR</NavLink>
-          <NavLink to="/">EN</NavLink>
+          <NavLink to="/">FR</NavLink>
+          <NavLink to="/home">EN</NavLink>
           <OpenLinksButton
             onClick={() => {
               setExtendNavbar((current) => !current);
@@ -81,7 +81,7 @@ const NavbarFr = () => {
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtendedOne onMenuItemSelect={closeNavbar} to="/accueil">
+          <NavbarLinkExtendedOne onMenuItemSelect={closeNavbar} to="/">
             Accueil
           </NavbarLinkExtendedOne>
           <NavbarLinkExtendedTwo to="/a-propos">À propos</NavbarLinkExtendedTwo>
@@ -91,10 +91,10 @@ const NavbarFr = () => {
           <NavbarLinkExtendedFour to="/contact-fr">
             Contact
           </NavbarLinkExtendedFour>
-          <NavbarLinkExtendedFive to="/accueil">
+          <NavbarLinkExtendedFive to="/">
             Français
           </NavbarLinkExtendedFive>
-          <NavbarLinkExtendedSix to="/">English</NavbarLinkExtendedSix>
+          <NavbarLinkExtendedSix to="/home">English</NavbarLinkExtendedSix>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>

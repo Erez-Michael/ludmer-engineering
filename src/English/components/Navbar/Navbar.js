@@ -67,8 +67,8 @@ const Header = () => {
               onMouseLeave={handleMouseLeave}
             />
           </NavLink>
-          <NavLink to="/accueil">FR</NavLink>
-          <NavLink to="/">EN</NavLink>
+          <NavLink to="/">FR</NavLink>
+          <NavLink to="/home">EN</NavLink>
           <OpenLinksButton
             onClick={() => {
               setExtendNavbar((current) => !current);
@@ -88,10 +88,10 @@ const Header = () => {
             Projects
           </NavbarLinkExtendedThree>
           <NavbarLinkExtendedFour to="/contact">Contact</NavbarLinkExtendedFour>
-          <NavbarLinkExtendedFive to="/accueil">
+          <NavbarLinkExtendedFive to="/">
             Français
           </NavbarLinkExtendedFive>
-          <NavbarLinkExtendedSix to="/">English</NavbarLinkExtendedSix>
+          <NavbarLinkExtendedSix to="/home">English</NavbarLinkExtendedSix>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
