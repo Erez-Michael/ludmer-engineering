@@ -19,6 +19,7 @@ import {
   ReviewSlider,
   ImageWrapper,
   CarouselImage,
+  ButtonWrapper,
   CardButton,
 } from "./ProjectPageStyles";
 import NavbarFr from "../Navbar/NavbarFr";
@@ -79,13 +80,17 @@ const ProjetsFr = () => {
 
           <ReviewSlider {...sliderSettings} ref={setSliderRef}>
             {data.map((e, index) => (
+              <>
               <ImageWrapper key={index}>
                 <CarouselImage src={e.image} />
-                <TextWrapper size="1.4rem" margin="2rem 1rem 4rem" weight="bold">
-                  {e.title}
+                <TextWrapper size="1.4rem" margin="0rem 1rem 2rem" weight="bold" >
+                  
                 </TextWrapper>
-                <CardButton to={e.navigateTo}>Voir Projet</CardButton>
               </ImageWrapper>
+                <ButtonWrapper>
+                <CardButton to={e.navigateTo}>{e.title}</CardButton>
+                </ButtonWrapper>
+              </>
             ))}
           </ReviewSlider>
         </Section>

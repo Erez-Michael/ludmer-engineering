@@ -17,7 +17,7 @@ const Logo = ({ className }) => {
   };
   
   const style = {
-    transition:"1.5s"
+    transition:"1s"
   }
   return (
     <>

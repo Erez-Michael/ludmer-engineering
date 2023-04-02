@@ -18,14 +18,24 @@ export const Container = styled.div`
   }
 `;
 export const MainHeading = styled.h1`
-font-size: clamp(2.3rem, 3vw, 4.5rem);
+  font-size: clamp(2.3rem, 3vw, 4.5rem);
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/clamp */
   /* Because styles are wrapper in backticks, everything in  between is considered a string. Therefore, when you use ${{}} it becomes vanilla JS and {()} is a functional component and insidea props is passed */
   color: #15202b;
   width: 100%;
   letter-spacing: 4px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   text-align: center;
+  animation: fadeIn 2s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 28px;
@@ -59,7 +69,7 @@ export const Heading = styled.h2`
   width: ${({ width }) => (width ? width : "100%")};
 `;
 export const TextWrapper = styled.span`
-  color: ${({ color }) => (color ? color : "")};
+  color: ${({ color }) => (color ? color : "#071C2F")};
   font-size: ${({ size }) => (size ? size : "")};
   font-weight: ${({ weight }) => (weight ? weight : "")};
   letter-spacing: ${({ spacing }) => (spacing ? spacing : "")};
@@ -67,11 +77,14 @@ export const TextWrapper = styled.span`
   margin: ${({ margin }) => (margin ? margin : "")};
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
-  max-height: 1rem;
+  max-height: 2rem;
   text-align: center;
+
+  
+  
 `;
 export const Section = styled.section`
-  padding: ${({ padding }) => (padding ? padding : "140px 0")};
+  padding: ${({ padding }) => (padding ? padding : "10px 0 80px 0")};
   margin: ${({ margin }) => (margin ? margin : "")};
   background: ${({ inverse }) => (inverse ? "white" : "#071c2f")};
   position: ${({ position }) => (position ? position : "")};

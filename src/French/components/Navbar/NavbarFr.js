@@ -50,7 +50,7 @@ const NavbarFr = () => {
         <RightContainer>
           <NavLink to="/accueil">Accueil</NavLink>
           <NavLink to="/a-propos">À propos</NavLink>
-          <NavLink to="/projets">Projets</NavLink>
+          <NavLink to="/projets">Réalisations</NavLink>
           <NavLink to="/contact-fr">Contact</NavLink>
           <NavLink
             to={
@@ -68,8 +68,8 @@ const NavbarFr = () => {
               onMouseLeave={handleMouseLeave}
             />
           </NavLink>
-          <NavLink to="/accueil">fr</NavLink>
-          <NavLink to="/">en</NavLink>
+          <NavLink to="/accueil">FR</NavLink>
+          <NavLink to="/">EN</NavLink>
           <OpenLinksButton
             onClick={() => {
               setExtendNavbar((current) => !current);
@@ -86,7 +86,7 @@ const NavbarFr = () => {
           </NavbarLinkExtendedOne>
           <NavbarLinkExtendedTwo to="/a-propos">À propos</NavbarLinkExtendedTwo>
           <NavbarLinkExtendedThree to="/projets">
-            Projets
+            Réalisations
           </NavbarLinkExtendedThree>
           <NavbarLinkExtendedFour to="/contact-fr">
             Contact

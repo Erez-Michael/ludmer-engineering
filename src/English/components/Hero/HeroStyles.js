@@ -27,7 +27,7 @@ export const HeroSection = styled.section`
 
 export const HeroImage = styled.image`
   position: absolute;
-  top: 120px;
+  top: 0;
   z-index: -1;
   img {
     width: 100%;

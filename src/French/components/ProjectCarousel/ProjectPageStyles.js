@@ -20,6 +20,16 @@ export const ContainerTop = styled.div`
   top: 35px;
   display: flex;
   justify-content: center;
+  animation: fadeIn 2s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const StyledContentTopTwo = styled.div`
@@ -80,28 +90,30 @@ export const StyledContentTopThree = styled.div`
 export const CarouselImage = styled.img`
   width: 100%;
   height: 300px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   object-fit: cover;
   vertical-align: middle;
+  position: relative;
+  left: 1rem;
 `;
 
-export const ImageWrapper = styled.div`
-  display: flex !important;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  height: 430px;
-  @media screen and (min-width: 440px) {
-    border: 1px solid #bebebe;
-  }
-`;
+
 
 export const ArrowWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
   padding: 0 50px;
+  animation: fadeIn 2s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const ButtonContainer = styled(Row)`
@@ -122,9 +134,11 @@ export const ButtonContainerTwo = styled(ButtonContainer)``;
 
 export const ReviewSlider = styled(Slider)`
   width: 100%;
+  margin-bottom: -15rem;
+
   .slick-track {
     display: flex;
-    padding: 30px;
+    padding: 50px;
     gap: 3rem;
   }
   .slick-slide {
@@ -135,23 +149,59 @@ export const ReviewSlider = styled(Slider)`
   .slick-list {
     overflow: hidden;
   }
+  animation: fadeIn 3s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`;
+export const ImageWrapper = styled.div`
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+`;
+
+export const ButtonWrapper = styled.div`
+  z-index: 2;
+  position: relative;
+  bottom: 45%;
+  left: 15%;
+  border-radius: 10px;
+  width: 70%;
+  backdrop-filter: blur(3px);
+  text-shadow: rgb(50, 82, 114) 1px 0px 0px,
+    rgb(50, 82, 114) 0.540302px 0.841471px 0px,
+    rgb(50, 82, 114) -0.416147px 0.909297px 0px,
+    rgb(50, 82, 114) -0.989992px 0.14112px 0px,
+    rgb(50, 82, 114) -0.653644px -0.756802px 0px,
+    rgb(50, 82, 114) 0.283662px -0.958924px 0px,
+    rgb(50, 82, 114) 0.96017px -0.279415px 0px;
 `;
 
 export const CardButton = styled(Link)`
-  background-color: #325272;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   text-align: center;
-  font-size: 1.3rem;
-  padding: 5px 10px;
+  font-size: 1.5rem;
+  padding: 2rem 2rem;
   color: #fff;
   cursor: pointer;
   width: 100%;
   font-weight: 600;
   margin: auto 0 0 0;
-  border: none;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0;
+  border-radius: 10px;
+
   &:hover {
-    background-color: #3f7aa6;
-    transition: background-color 0.25s ease-in-out;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    
   }
 `;

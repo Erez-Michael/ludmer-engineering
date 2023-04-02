@@ -125,8 +125,8 @@ export const ContentButton = styled(motion.button)`
   position: relative;
   overflow: hidden;
   &:before {
-    background: ${({ inverse }) => (inverse ? "#0c4577" : "#3F7AA6")};
-    opacity: 0.5;
+    background: ${({ inverse }) => (inverse ? "#0c4577" : "white")};
+    opacity: 0.6;
     content: "";
     position: absolute;
     top: 50%;

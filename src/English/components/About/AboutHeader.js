@@ -4,9 +4,19 @@ import styled from 'styled-components';
 const AboutHeader = () => {
   return (
     <ContainerTop>
-     
-      <StyledContentTopTwo>Where passion meets</StyledContentTopTwo>
-      <StyledContentTopThree>experience.</StyledContentTopThree>
+      <StyledContentTop>Where passion meets</StyledContentTop>
+      <Wrapper>
+      <LetterE>e</LetterE>
+      <LetterX>x</LetterX>
+      <LetterP>p</LetterP>
+      <LetterE1>e</LetterE1>
+      <LetterR>r</LetterR>
+      <LetterI>i</LetterI>
+      <LetterE2>e</LetterE2>
+      <LetterN>n</LetterN>
+      <LetterC>c</LetterC>
+      <LetterE3>e</LetterE3>
+      </Wrapper>
     </ContainerTop>
   );
 }
@@ -24,10 +34,20 @@ const ContainerTop = styled.div`
 `;
 
 
-const StyledContentTopTwo = styled.div`
+const StyledContentTop = styled.div`
   margin-top: 100px;
   font-size: 60px;
   font-weight: 700;
+  animation: fadeIn 2s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @media screen and (max-width: 1024px) {
     font-size: 50px;
   }
@@ -39,7 +59,7 @@ const StyledContentTopTwo = styled.div`
   }
 `;
 
-const StyledContentTopThree = styled.div`
+const LetterE = styled.div`
   height: fit-content;
   display: flex;
   align-items: center;
@@ -56,9 +76,23 @@ const StyledContentTopThree = styled.div`
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  ///////////////////////////////////
+
+  animation-duration: 0s;
+  animation-name: letterSlide;
+
+  @keyframes letterSlide {
+    from {
+      transform: translate3d(-5000%, 0, 0);
+      visibility: visible;
+    }
+  }
   
   @media screen and (max-width: 1024px) {
     font-size: 50px;
+  }
+  @media (min-width: 891px) {
+    font-size: 60px;
   }
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -69,9 +103,39 @@ const StyledContentTopThree = styled.div`
     display: flex;
     justify-content: flex-start;
   }
-
- 
+`;
+const Wrapper = styled.div`
+  display: flex;
+`;
+const LetterX = styled(LetterE)`
+  animation-duration: 0.1s;
+`;
+const LetterP = styled(LetterE)`
+  animation-duration: 0.4s;
+`;
+const LetterE1 = styled(LetterE)`
+  animation-duration: 0.6s;
+`;
+const LetterR = styled(LetterE)`
+  animation-duration: 0.8s;
+`;
+const LetterI = styled(LetterE)`
+  animation-duration: 1s;
+`;
+const LetterE2 = styled(LetterE)`
+  animation-duration: 1.2s;
+`;
+const LetterN = styled(LetterE)`
+  animation-duration: 1.4s;
+`;
+const LetterC = styled(LetterE)`
+  animation-duration: 1.6s;
+`;
+const LetterE3 = styled(LetterE)`
+  animation-duration: 1.8s;
 `;
 
 
-export default AboutHeader
+
+
+export default AboutHeader;

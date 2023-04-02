@@ -9,7 +9,7 @@ export const ContactData = {
     text: "Nos bureaux sont situées dans le sud ouest de Montréal",
   },
   headline: "Contactez nous",
-  description: "8h30 à 17h00 | Lundi à Vendredi",
+  description: "8h30 à 17h00 | Lundi au Vendredi",
   email: "admin@ludmer-engineering.ca",
   address: "4008 rue Notre-Dame Ouest, Montréal, QC H4C 1R1",
   imgStart: "",
