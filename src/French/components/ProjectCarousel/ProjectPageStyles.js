@@ -95,6 +95,7 @@ export const CarouselImage = styled.img`
   vertical-align: middle;
   position: relative;
   left: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 `;
 
 
