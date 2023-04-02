@@ -1,7 +1,3 @@
-//**********************************************//
-//**************** // FRENCH // ****************//
-//**********************************************//
-
 import styled from "styled-components";
 import { Row } from "../../../GlobalStyles";
 import Slider from "react-slick";
@@ -97,8 +93,6 @@ export const CarouselImage = styled.img`
   left: 1rem;
 `;
 
-
-
 export const ArrowWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -160,7 +154,7 @@ export const ReviewSlider = styled(Slider)`
     }
   }
 `;
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(Link)`
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -202,6 +196,5 @@ export const CardButton = styled(Link)`
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
-    
   }
 `;

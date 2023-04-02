@@ -81,14 +81,16 @@ const ProjetsFr = () => {
           <ReviewSlider {...sliderSettings} ref={setSliderRef}>
             {data.map((e, index) => (
               <>
-              <ImageWrapper key={index}>
-                <CarouselImage src={e.image} />
-                <TextWrapper size="1.4rem" margin="0rem 1rem 2rem" weight="bold" >
-                  
-                </TextWrapper>
-              </ImageWrapper>
+                <ImageWrapper key={index} to={e.navigateTo}>
+                  <CarouselImage src={e.image} />
+                  <TextWrapper
+                    size="1.4rem"
+                    margin="0rem 1rem 2rem"
+                    weight="bold"
+                  ></TextWrapper>
+                </ImageWrapper>
                 <ButtonWrapper>
-                <CardButton to={e.navigateTo}>{e.title}</CardButton>
+                  <CardButton to={e.navigateTo}>{e.title}</CardButton>
                 </ButtonWrapper>
               </>
             ))}

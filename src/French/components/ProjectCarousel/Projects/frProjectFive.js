@@ -5,7 +5,6 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
-// Shoring Design
 
 const frProjectFive = () => {
   const galleryImages = [

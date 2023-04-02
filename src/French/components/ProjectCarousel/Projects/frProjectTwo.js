@@ -5,7 +5,6 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
-// Retrofiting & Underpinning
 
 const frProjectTwo = () => {
   const galleryImages = [
