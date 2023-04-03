@@ -41,7 +41,7 @@ const Header = () => {
     <NavbarContainer extendNavbar={extendNavbar}>
       <NavbarInnerContainer>
         <StyledLogo>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/home" style={{ textDecoration: "none" }}>
             <Logo  />
           </Link>
         </StyledLogo>
@@ -80,7 +80,7 @@ const Header = () => {
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtendedOne onMenuItemSelect={closeNavbar} to="/">
+          <NavbarLinkExtendedOne onMenuItemSelect={closeNavbar} to="/home">
             Home
           </NavbarLinkExtendedOne>
           <NavbarLinkExtendedTwo to="/about">About</NavbarLinkExtendedTwo>
