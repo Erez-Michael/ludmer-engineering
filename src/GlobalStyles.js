@@ -115,7 +115,7 @@ export const HomeSection = styled.section`
 `;
 
 export const AboutSection = styled(Section)`
-  padding: ${({ padding }) => (padding ? padding : "10px 10% 0 10%")};
+  padding: ${({ padding }) => (padding ? padding : "10px 12% 0 10%")};
 `;
 export const Row = styled.div`
   display: flex;

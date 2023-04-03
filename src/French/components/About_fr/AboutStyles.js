@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 export const ContentRow = styled.div`
   display: flex;
-  margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-  justify-content: space-around;
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
+    margin-bottom: 50px;
+    margin-top: -10px;
   }
 `;
 
@@ -57,7 +57,7 @@ export const ImgWrapper = styled(motion.div)`
   position: relative;
   z-index: -1;
   @media screen and (max-width: 768px) {
-    margin-bottom: -50px;
+    width: 80vw;
   }
 `;
 
@@ -100,6 +100,12 @@ export const Subtitle = styled(motion.p)`
   margin-bottom: 35px;
   line-height: 24px;
   color: "#6a6a6a";
+  @media screen and (max-width: 560px) {
+    width: 85vw;
+  }
+  @media screen and (max-width: 375px) {
+    width: 85vw;
+  }
 `;
 
 

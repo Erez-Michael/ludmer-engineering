@@ -40,9 +40,13 @@ const ContainerTop = styled.div`
   flex-direction: column;
   padding-top: 15rem;
   margin-bottom: 5rem;
+  @media screen and (max-width: 768px) {
+    padding-top: 10rem;
+    margin-bottom: -10rem;
+  }
   @media screen and (max-width: 560px) {
     padding-top: 10rem;
-    margin-bottom: 3rem;
+    margin-bottom: -10rem;
   }
 `;
 
@@ -67,7 +71,7 @@ const StyledContentTop = styled.div`
     font-size: 40px;
   }
   @media screen and (max-width: 560px) {
-    font-size: 35px;
+    font-size: 30px;
     
   }
   @media screen and (max-width: 375px) {
