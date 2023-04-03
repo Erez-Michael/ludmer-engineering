@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import "./ImageGallery.css";
 import { FiChevronsLeft, FiChevronsRight, FiXCircle } from "react-icons/fi";
 import { SpinnerDiamond } from "spinners-react";
+import Navbar from "../../Navbar/Navbar";
+import {AiOutlineArrowLeft} from "react-icons/ai"
 
 
 const ImageGallery = ({ galleryImages }) => {
@@ -56,7 +59,10 @@ const ImageGallery = ({ galleryImages }) => {
 
     return (
       <>
+          <Navbar />
         <Wrapper>
+        
+
           <div>
             {openModal && (
               <div className="sliderWrap">
@@ -123,5 +129,17 @@ const Wrapper = styled.div`
       opacity: 1;
     }
   }
+  @media screen and (max-width: 1024px) {
+    margin: 0 5%;
+  }
+
+  @media screen and (max-width: 475px) {
+    margin: 0 5%;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 5%;
+  }
 `;
+
+
 export default ImageGallery;

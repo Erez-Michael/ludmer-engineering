@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-
-
 export const ContentRow = styled.div`
   display: flex;
   margin: 0 -15px -15px -15px;
@@ -12,8 +10,9 @@ export const ContentRow = styled.div`
   justify-content: space-around;
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
+    margin: -8rem 0;
   }
-  `;
+`;
 
 export const ContentColumn = styled(motion.div)`
   margin-bottom: 15px;
@@ -46,10 +45,7 @@ export const TextWrapper = styled.div`
 export const StyledMap = styled(motion.div)`
   max-width: 35vw;
   height: 50vh;
-  padding-top: 40px;
   padding-bottom: 0px;
-  @media (max-width: 1024px) {
-  }
   @media (max-width: 767px) {
     max-width: 80vw;
   }
@@ -72,9 +68,6 @@ export const TopLine = styled(motion.div)`
   }
 `;
 
-
-
-
 export const Heading = styled(motion.h2)`
   margin-bottom: 24px;
   font-size: 3rem;
@@ -95,7 +88,7 @@ export const Subtitle = styled(motion.p)`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: TextWrapper;
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
@@ -107,6 +100,3 @@ export const Subtitle = styled(motion.p)`
     font-size: 1rem;
   }
 `;
-
-
-

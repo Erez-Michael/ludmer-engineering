@@ -14,6 +14,7 @@ export const ContentRow = styled.div`
   justify-content: space-around;
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
+    margin: -8rem 0;
   }
 `;
 
