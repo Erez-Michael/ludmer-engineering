@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Section } from "../../../GlobalStyles";
+import { Container, ContactSection } from "../../../GlobalStyles";
 import { FiPhone, FiMapPin, FiMail, FiCalendar } from "react-icons/fi";
 
 import {
@@ -46,7 +46,7 @@ export const ContactContent = ({
   }, [inView, animation]);
 
   return (
-    <Section inverse={inverse} ref={ref}>
+    <ContactSection inverse={inverse} ref={ref}>
       <Container>
         <ContentRow reverse={reverse}>
           <ContentColumn>
@@ -121,6 +121,6 @@ export const ContactContent = ({
           </ContentColumn>
         </ContentRow>
       </Container>
-    </Section>
+    </ContactSection>
   );
 };

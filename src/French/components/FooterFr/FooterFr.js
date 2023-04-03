@@ -16,6 +16,8 @@ const FooterFr = () => {
 };
 
 const Container = styled.div`
+  position: relative;
+  bottom: -4rem;
   border-top: solid #435f7b 0.1rem;
   width: 100%;
   padding: 40px 0;

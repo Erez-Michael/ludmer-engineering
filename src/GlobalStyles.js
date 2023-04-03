@@ -99,8 +99,8 @@ export const Section = styled.section`
   }
 `;
 export const HomeSection = styled.section`
-  padding: ${({ padding }) => (padding ? padding : "10px 10% 80px 10%")};
-  margin: ${({ margin }) => (margin ? margin : "")};
+  padding: ${({ padding }) => (padding ? padding : "10px 10% 150px 10%")};
+  margin: ${({ margin }) => (margin ? margin : "0 0 -4rem 0")};
   background: ${({ inverse }) => (inverse ? "white" : "#071c2f")};
   position: ${({ position }) => (position ? position : "")};
   width: ${({ width }) => (width ? width : "auto")};
@@ -115,7 +115,23 @@ export const HomeSection = styled.section`
 `;
 
 export const AboutSection = styled(Section)`
-  padding: ${({ padding }) => (padding ? padding : "10px 12% 0 10%")};
+  padding: ${({ padding }) => (padding ? padding : "0 12% 0 10%")};
+`;
+
+export const ContactSection = styled(Section)`
+  padding: ${({ padding }) => (padding ? padding : "10px 10% 80px 10%")};
+  margin: ${({ margin }) => (margin ? margin : "")};
+  background: ${({ inverse }) => (inverse ? "white" : "#071c2f")};
+  position: ${({ position }) => (position ? position : "")};
+  width: ${({ width }) => (width ? width : "auto")};
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : "auto")};
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
+  height: ${({ height }) => (height ? height : "auto")};
+  max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
+  min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
+  @media screen and (max-width: 768px) {
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+  }
 `;
 export const Row = styled.div`
   display: flex;
