@@ -7,6 +7,7 @@ import { aboutOne, aboutTwo } from "../../data/AboutData";
 import AboutHeader from "./AboutHeader";
 import PageWrapper from "../../pages/PageWrapper";
 import NavbarFr from "../Navbar/NavbarFr";
+import FooterFr from "../../../French/components/FooterFr/FooterFr";
 
 const AboutFr = () => {
   return (
@@ -15,6 +16,7 @@ const AboutFr = () => {
       <AboutHeader />
       <AboutContent {...aboutOne} />
       <AboutContent {...aboutTwo} />
+      <FooterFr/>
     </PageWrapper>
   );
 };

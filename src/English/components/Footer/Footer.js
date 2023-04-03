@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Footer2 = () => {
+const Footer = () => {
   return (
     <Container>
       <div>
@@ -42,4 +42,4 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
 }
 `;
-export default Footer2;
+export default Footer;

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
 
-import Footer from "./French/components/Footer/Footer";
+import Footer from "./French/components/FooterFr/FooterFr";
 import ScrollTop from "./Buttons/ScrollTop";
 
 //Pages English
@@ -64,7 +64,6 @@ const App = () => {
         <Route path="/Shoring-design" element={<frProjectFive />} />
       </Routes>
       <ScrollTop />
-      <Footer />
     </BrowserRouter>
   );
 };

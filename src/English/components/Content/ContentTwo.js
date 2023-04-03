@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { Container, Section } from "../../../GlobalStyles";
+import { Container, HomeSection } from "../../../GlobalStyles";
 import {
   ContentRow,
   TextWrapper,
@@ -47,7 +47,7 @@ export const ContentTwo = ({
      };
 
   return (
-    <Section inverse={inverse} ref={ref}>
+    <HomeSection inverse={inverse} ref={ref}>
       <Container>
         <ContentRow reverse={reverse}>
           <ContentColumn>
@@ -98,6 +98,6 @@ export const ContentTwo = ({
           </ContentColumn>
         </ContentRow>
       </Container>
-    </Section>
+    </HomeSection>
   );
 };

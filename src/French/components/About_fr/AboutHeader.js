@@ -39,10 +39,10 @@ const ContainerTop = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-top: 15rem;
-  margin-bottom: -5rem;
+  margin-bottom: 5rem;
   @media screen and (max-width: 560px) {
     padding-top: 10rem;
-    margin-bottom: -10rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -67,9 +67,8 @@ const StyledContentTop = styled.div`
     font-size: 40px;
   }
   @media screen and (max-width: 560px) {
-    font-size: 30px;
-    padding-top: 0rem;
-    margin-bottom: 0rem;
+    font-size: 35px;
+    
   }
   @media screen and (max-width: 375px) {
     font-size: 25px;
@@ -79,7 +78,7 @@ const StyledContentTop = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 1024px) {
+x  @media screen and (max-width: 1024px) {
     font-size: 50px;
   }
   @media screen and (max-width: 768px) {

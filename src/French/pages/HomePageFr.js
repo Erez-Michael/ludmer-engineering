@@ -9,6 +9,7 @@ import { ContentTwo } from "../components/Content/ContentTwo";
 import { heroOne, heroTwo } from "../data/HeroData";
 import Hero from "../components/Hero_fr/Hero";
 import NavbarFr from "../components/Navbar/NavbarFr";
+import FooterFr from "../components/FooterFr/FooterFr";
 
 const HomePageFr = () => {
   return (
@@ -17,6 +18,7 @@ const HomePageFr = () => {
       <Hero />
       <Content {...heroOne} />
       <ContentTwo {...heroTwo} />
+      <FooterFr />
     </PageWrapper>
   );
 };

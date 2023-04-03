@@ -5,6 +5,9 @@ import { ContentTwo } from "../components/Content/ContentTwo";
 import { heroOne, heroTwo } from "../data/HeroData";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+
+
 
 const Home = () => {
   return (
@@ -13,6 +16,7 @@ const Home = () => {
       <Hero />
       <Content {...heroOne} />
       <ContentTwo {...heroTwo} />
+      <Footer/>
     </PageWrapper>
   );
 };

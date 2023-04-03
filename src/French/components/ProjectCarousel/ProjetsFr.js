@@ -23,6 +23,7 @@ import {
   CardButton,
 } from "./ProjectPageStyles";
 import NavbarFr from "../Navbar/NavbarFr";
+import FooterFr from "../../../French/components/FooterFr/FooterFr";
 
 const ProjetsFr = () => {
   const [sliderRef, setSliderRef] = useState(null);
@@ -96,6 +97,7 @@ const ProjetsFr = () => {
             ))}
           </ReviewSlider>
         </Section>
+        <FooterFr />
       </>
     );
   }
