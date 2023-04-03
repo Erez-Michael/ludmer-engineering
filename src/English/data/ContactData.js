@@ -2,7 +2,7 @@ export const ContactData = {
   reverse: false,
   inverse: true,
   topLine: {
-    text: "Located in the South West of Montreal",
+    text: "Located in the Southwest of Montreal",
   },
   headline: "Get in touch",
   description: "8am - 5 pm | Monday - Friday",

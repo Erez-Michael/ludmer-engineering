@@ -5,7 +5,7 @@
 export const data = [
   //Project One
   {
-    title: "Transformation de batiment et sous oeuvre",
+    title: "Transformation de bâtiments et sous-oeuvre",
     description: "",
     image:
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738137/Ludmer%20Engineering/Project%201/IMG_5041_y3fvrc.jpg",
@@ -24,7 +24,7 @@ export const data = [
   //Project Four
 
   {
-    title: "Soutenement des terres",
+    title: "Soutènement des terres",
     description: "",
     image:
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738131/Ludmer%20Engineering/Project%205/dupre_et_brillon_4803_w3av3b.jpg",
