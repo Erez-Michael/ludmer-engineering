@@ -30,6 +30,12 @@ export const ContainerTop = styled.div`
       opacity: 1;
     }
   }
+  @media screen and (max-width: 768px) {
+    margin: 0 -3%;
+  }
+  @media screen and (max-width: 475px) {
+    margin: 0 -3%;
+  }
 `;
 
 export const StyledContentTopTwo = styled.div`
@@ -160,6 +166,10 @@ export const ReviewSlider = styled(Slider)`
       opacity: 1;
     }
   }
+  @media screen and (max-width: 768px) {
+    margin: 0 -4%;
+  }
+ 
 `;
 export const ImageWrapper = styled(Link)`
   display: flex !important;

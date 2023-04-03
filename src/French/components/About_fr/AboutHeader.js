@@ -40,7 +40,10 @@ const ContainerTop = styled.div`
   flex-direction: column;
   padding-top: 15rem;
   margin-bottom: -5rem;
-  
+  @media screen and (max-width: 560px) {
+    padding-top: 10rem;
+    margin-bottom: -10rem;
+  }
 `;
 
 const StyledContentTop = styled.div`
@@ -61,17 +64,32 @@ const StyledContentTop = styled.div`
     font-size: 50px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 45px;
+    font-size: 40px;
   }
   @media screen and (max-width: 560px) {
-    font-size: 35px;
+    font-size: 30px;
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 25px;
   }
 `;
 
 const Wrapper = styled.div`
-display:flex;
-flex-direction:row;
-
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 1024px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 45px;
+  }
+  @media screen and (max-width: 560px) {
+    display: flex;
+    flex-wrap:wrap
+  }
+  
 `;
 
 const LetterP = styled.div`
@@ -115,6 +133,9 @@ const LetterP = styled.div`
     display: flex;
     justify-content: flex-start;
   }
+  @media screen and (max-width: 375px) {
+    font-size: 25px;
+  }
 `;
 const StyledContentBottom = styled.div`
   margin: 0 1rem;
@@ -134,7 +155,9 @@ const StyledContentBottom = styled.div`
   }
   @media screen and (max-width: 475px) {
     font-size: 30px;
-
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 25px;
   }
 `;
 
@@ -184,6 +207,18 @@ const LetterE3 = styled.div`
       transform: translate3d(-5000%, 0, 0);
       visibility: visible;
     }
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 475px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 25px;
   }
 `;
 const LetterE1 = styled(LetterE3)`

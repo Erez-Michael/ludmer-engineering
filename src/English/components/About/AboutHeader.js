@@ -29,7 +29,7 @@ const ContainerTop = styled.div`
   padding-top: 8rem;
   margin-bottom: -4rem;
   @media screen and (max-width: 768px) {
-    margin-bottom: -8rem;
+    margin-bottom: -12rem;
   }
 `;
 
@@ -38,7 +38,7 @@ const StyledContentTop = styled.div`
   margin-top: 100px;
   font-size: 60px;
   font-weight: 700;
-  animation: fadeIn 2s;
+  animation: fadeIn 3s;
 
   @keyframes fadeIn {
     0% {
@@ -53,9 +53,10 @@ const StyledContentTop = styled.div`
   }
   @media screen and (max-width: 768px) {
     font-size: 45px;
+    margin-top: 1rem;
   }
   @media screen and (max-width: 560px) {
-    font-size: 35px;
+    font-size: 30px;
   }
 `;
 

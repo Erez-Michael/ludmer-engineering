@@ -11,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
 `;
 export const Container = styled.div`
   width: 100%;
-  max-width: 1300px;
   margin: 180px auto 0 auto;
   padding: 0 50px;
   @media screen and (max-width: 960px) {
@@ -38,12 +37,13 @@ export const MainHeading = styled.h1`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 28px;
+    font-size: 25px;
+
   }
 
   @media screen and (max-width: 375px) {
     font-size: 20px;
-    margin-top: 180px;
+    margin-top: -4rem;
   }
 
   span {
