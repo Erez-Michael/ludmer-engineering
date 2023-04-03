@@ -21,7 +21,7 @@ export const aboutTwo = {
   },
   headline: "INNOVATION & EXCELLENCE",
   description:
-    "Our first objective is to complete a full assessment of the project, be it a desktop study, a site visit, to fully understand soil conditions, other relevant site conditions and glean any information already collected by the client. We follow engineering guidelines and codes when available, however due to 20+ years of experience we are able to innovate when faced with unlikely and unusual scenarios. We love a new challenge, and revel in meeting or exceeding the clients expectations and we certainly won't cower away from getting our hands dirty. We pride ourselves on being equipped with state of the art technology and have diligent and passionate people behind every project.",
+    "Our first objective is to complete a full assessment of the project, be it a desktop study, a site visit, to fully understand soil conditions, other relevant site conditions and glean any information already collected by the client. We follow engineering guidelines and codes when available, however due to 20+ years of experience we are able to innovate when faced with unlikely and unusual scenarios. We love a new challenge, and revel in meeting or exceeding client expectations and we certainly won't cower away from getting our hands dirty. We pride ourselves on being equipped with state of the art technology and have diligent and passionate people behind every project.",
   imgStart: "",
   img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1679416768/Ludmer%20Engineering/plan_ztpwbo.png",
   start: "true",
