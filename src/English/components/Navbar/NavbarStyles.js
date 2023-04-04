@@ -58,7 +58,7 @@ export const RightContainer = styled.div`
   align-items: center;
   animation-duration: 0.5s;
   animation-name: slideInRight;
-
+  
   @keyframes slideInRight {
     from {
       transform: translate3d(250%, 0, 0);
@@ -68,10 +68,10 @@ export const RightContainer = styled.div`
   @media (min-width: 891px) {
     font-size: 10px;
   }
-`;
+  `;
 
 export const NavLink = styled(BaseNavLink)`
-  color: white;
+  color: whitesmoke;
   font-size: 1rem;
   text-decoration: none;
   margin: 10px;
@@ -117,9 +117,11 @@ export const OpenLinksButton = styled.button`
 `;
 
 export const NavbarExtendedContainer = styled.div`
+  height: 60vh;
   position: sticky;
   display: flex;
   flex-direction: column;
+  justify-content:space-evenly;
   align-items: center;
   margin-top: 10%;
   overflow-y: hidden;
@@ -142,9 +144,10 @@ export const NavbarLinkExtendedOne = styled(MenuLink)`
   font-size: large;
   text-decoration: none;
   cursor: pointer;
+
   transition: all 0.2s ease-in-out;
 
-  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  height: ${(props) => (props.extendNavbar ? "100vh" : "fit-content")};
   @media screen and (min-width: 1024px) {
     display: none;
   }
@@ -188,7 +191,7 @@ export const NavbarLinkExtendedTwo = styled(MenuLink)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 
-  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  height: ${(props) => (props.extendNavbar ? "100vh" : "fit-content")};
   @media screen and (min-width: 1024px) {
     display: none;
   }
