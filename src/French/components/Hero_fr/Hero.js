@@ -18,7 +18,8 @@ const Hero = () => {
       <Wrapper>
         <Container>
           <MainHeading>
-            La firme de <span>Génie civil</span> pour les <span>entrepreneurs&nbsp;</span> en construction
+            La <span>firme</span> de Génie civil pour les
+            entrepreneurs en construction
           </MainHeading>
         </Container>
       </Wrapper>
