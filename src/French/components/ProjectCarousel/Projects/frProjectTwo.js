@@ -2,11 +2,13 @@
 //**************** // FRENCH // ****************//
 //**********************************************//
 
+//  Géotechnique  //
+
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
 
-const frProjectTwo = () => {
+const FrProjectTwo = () => {
   const galleryImages = [
     {
       img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%202/IMG_5123_sgu4v6.jpg",
@@ -29,4 +31,4 @@ const frProjectTwo = () => {
   );
 };
 
-export default frProjectTwo;
+export default FrProjectTwo;

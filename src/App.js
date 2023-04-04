@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
 
-import Footer from "./French/components/FooterFr/FooterFr";
+// Scroll to top button
 import ScrollTop from "./Buttons/ScrollTop";
 
 //Pages English
@@ -14,8 +14,8 @@ import ContactPage from "./English/pages/ContactPage";
 // Projects
 import ProjectOne from "./English/components/ProjectCarousel/Projects/ProjectOne";
 import ProjectTwo from "./English/components/ProjectCarousel/Projects/ProjectTwo";
+import ProjectThree from "./English/components/ProjectCarousel/Projects/ProjectThree";
 import ProjectFour from "./English/components/ProjectCarousel/Projects/ProjectFour";
-import ProjectFive from "./English/components/ProjectCarousel/Projects/ProjectFive";
 
 //////////////////////////////////////////////////
 
@@ -24,11 +24,12 @@ import HomePageFr from "./French/pages/HomePageFr";
 import AboutPageFr from "./French/pages/AboutPageFr";
 import ProjectsPageFr from "./French/components/ProjectCarousel/ProjetsFr";
 import ContactPageFr from "./French/pages/ContactPageFr";
-//Projects French
-// import frProjectOne from "./French/components/ProjectCarousel/Projects/frProjectOne";
-// import frProjectTwo from "./French/components/ProjectCarousel/Projects/frProjectTwo";
-// import frProjectFour from "./French/components/ProjectCarousel/Projects/frProjectFour";
-// import frProjectFive from "./French/components/ProjectCarousel/Projects/frProjectFive";
+
+// Projects French
+import FrProjectOne from "./French/components/ProjectCarousel/Projects/FrProjectOne";
+import FrProjectTwo from "./French/components/ProjectCarousel/Projects/FrProjectTwo";
+import FrProjectThree from "./French/components/ProjectCarousel/Projects/FrProjectThree.js";
+import FrProjectFour from "./French/components/ProjectCarousel/Projects/FrProjectFour";
 
 const App = () => {
   return (
@@ -46,8 +47,8 @@ const App = () => {
 
         <Route path="/Retrofiting+Underpinning" element={<ProjectOne />} />
         <Route path="/Geotechnical-engineering" element={<ProjectTwo />} />
-        <Route path="/Rock-Mechanics" element={<ProjectFour />} />
-        <Route path="/Shoring-design" element={<ProjectFive />} />
+        <Route path="/Rock-Mechanics" element={<ProjectThree />} />
+        <Route path="/Shoring-design" element={<ProjectFour />} />
 
         {/* FRANÇAIS */}
 
@@ -58,10 +59,10 @@ const App = () => {
 
         {/* Projets */}
 
-        <Route path="/Retrofiting+Underpinning" element={<frProjectOne />} />
-        <Route path="/Geotechnical-engineering" element={<frProjectTwo />} />
-        <Route path="/Rock-Mechanics" element={<frProjectFour />} />
-        <Route path="/Shoring-design" element={<frProjectFive />} />
+        <Route path="/Transformation_de_bâtiments_et_sous-oeuvre" element={<FrProjectOne />} />
+        <Route path="/Géotechnique" element={<FrProjectTwo />} />
+        <Route path="/Mécanique_des_roches" element={<FrProjectThree />} />
+        <Route path="/Soutènement_des_terres" element={<FrProjectFour />} />
       </Routes>
       <ScrollTop />
     </BrowserRouter>

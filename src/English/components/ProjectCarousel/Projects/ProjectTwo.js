@@ -1,7 +1,7 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
-// Retrofiting & Underpinning
+// Geotechnical-engineering
 
 const ProjectTwo = () => {
   const galleryImages = [
