@@ -1,25 +1,25 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const AboutHeader = () => {
   return (
     <ContainerTop>
       <StyledContentTop>Where passion meets</StyledContentTop>
-      <Wrapper>
-      <LetterE>e</LetterE>
-      <LetterX>x</LetterX>
-      <LetterP>p</LetterP>
-      <LetterE1>e</LetterE1>
-      <LetterR>r</LetterR>
-      <LetterI>i</LetterI>
-      <LetterE2>e</LetterE2>
-      <LetterN>n</LetterN>
-      <LetterC>c</LetterC>
-      <LetterE3>e</LetterE3>
-      </Wrapper>
+        <Wrapper>
+          <LetterE>e</LetterE>
+          <LetterX>x</LetterX>
+          <LetterP>p</LetterP>
+          <LetterE1>e</LetterE1>
+          <LetterR>r</LetterR>
+          <LetterI>i</LetterI>
+          <LetterE2>e</LetterE2>
+          <LetterN>n</LetterN>
+          <LetterC>c</LetterC>
+          <LetterE3>e</LetterE3>
+        </Wrapper>
     </ContainerTop>
   );
-}
+};
 
 const ContainerTop = styled.div`
   display: flex;
@@ -32,7 +32,6 @@ const ContainerTop = styled.div`
     margin-bottom: -12rem;
   }
 `;
-
 
 const StyledContentTop = styled.div`
   margin-top: 100px;
@@ -88,7 +87,7 @@ const LetterE = styled.div`
       visibility: visible;
     }
   }
-  
+
   @media screen and (max-width: 1024px) {
     font-size: 50px;
   }
@@ -105,6 +104,18 @@ const LetterE = styled.div`
     justify-content: flex-start;
   }
 `;
+
+// CSS underline effect *************** ///
+
+// const Underline = styled.div`
+//   width: 95%;
+//   height: 40px;
+//   border: solid 3px;
+//   border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
+//   border-radius: 100%/50px 0 0 0;
+//   transform: rotate(-1deg);
+// `;
+
 const Wrapper = styled.div`
   display: flex;
 `;
@@ -135,8 +146,5 @@ const LetterC = styled(LetterE)`
 const LetterE3 = styled(LetterE)`
   animation-duration: 1.8s;
 `;
-
-
-
 
 export default AboutHeader;

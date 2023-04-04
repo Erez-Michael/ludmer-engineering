@@ -26,7 +26,7 @@ import ProjectsPageFr from "./French/components/ProjectCarousel/ProjetsFr";
 import ContactPageFr from "./French/pages/ContactPageFr";
 
 // Projects French
-import FrProjectOne from "./French/components/ProjectCarousel/Projects/FrProjectOne";
+import { FrProjectOne } from "./French/components/ProjectCarousel/Projects/FrProjectOne";
 import FrProjectTwo from "./French/components/ProjectCarousel/Projects/FrProjectTwo";
 import FrProjectThree from "./French/components/ProjectCarousel/Projects/FrProjectThree.js";
 import FrProjectFour from "./French/components/ProjectCarousel/Projects/FrProjectFour";
@@ -59,7 +59,10 @@ const App = () => {
 
         {/* Projets */}
 
-        <Route path="/Transformation_de_bâtiments_et_sous-oeuvre" element={<FrProjectOne />} />
+        <Route
+          path="/Transformation_de_bâtiments_et_sous-oeuvre"
+          element={<FrProjectOne />}
+        />
         <Route path="/Géotechnique" element={<FrProjectTwo />} />
         <Route path="/Mécanique_des_roches" element={<FrProjectThree />} />
         <Route path="/Soutènement_des_terres" element={<FrProjectFour />} />
