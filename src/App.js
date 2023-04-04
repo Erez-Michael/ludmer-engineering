@@ -26,7 +26,7 @@ import ProjectsPageFr from "./French/pages/ProjectsPageFr";
 import ContactPageFr from "./French/pages/ContactPageFr";
 
 // Projects French
-import FrProjectOne from "./French/components/ProjectCarousel/Projects/FrProjectOne";
+import FrProjectOne from "./French/components/ProjectCarousel/Projects/ProjectOneFr";
 import FrProjectTwo from "./French/components/ProjectCarousel/Projects/FrProjectTwo";
 import FrProjectThree from "./French/components/ProjectCarousel/Projects/FrProjectThree";
 import FrProjectFour from "./French/components/ProjectCarousel/Projects/FrProjectFour";
