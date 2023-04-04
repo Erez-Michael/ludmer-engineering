@@ -22,7 +22,7 @@ import ProjectFour from "./English/components/ProjectCarousel/Projects/ProjectFo
 //Pages French
 import HomePageFr from "./French/pages/HomePageFr";
 import AboutPageFr from "./French/pages/AboutPageFr";
-import ProjectsPageFr from "./French/components/ProjectCarousel/ProjetsFr";
+import ProjectsPageFr from "./French/pages/ProjectsPageFr";
 import ContactPageFr from "./French/pages/ContactPageFr";
 
 // Projects French
