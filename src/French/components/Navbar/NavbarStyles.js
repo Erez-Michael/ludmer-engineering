@@ -7,7 +7,7 @@ import { Link, NavLink as BaseNavLink } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
   z-index: 999 !important;
-  opacity:0.85;
+  opacity: 0.85;
   position: fixed;
   width: 100%;
   height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
@@ -58,7 +58,7 @@ export const RightContainer = styled.div`
   align-items: center;
   animation-duration: 0.5s;
   animation-name: slideInRight;
-  
+
   @keyframes slideInRight {
     from {
       transform: translate3d(250%, 0, 0);
@@ -68,7 +68,7 @@ export const RightContainer = styled.div`
   @media (min-width: 891px) {
     font-size: 10px;
   }
-  `;
+`;
 
 export const NavLink = styled(BaseNavLink)`
   color: whitesmoke;
@@ -121,7 +121,7 @@ export const NavbarExtendedContainer = styled.div`
   position: sticky;
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 10%;
   overflow-y: hidden;
