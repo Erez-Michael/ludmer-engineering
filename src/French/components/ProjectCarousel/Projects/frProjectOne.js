@@ -7,7 +7,7 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
 
-export const FrProjectOne = () => {
+const FrProjectOne = () => {
   const galleryImages = [
     {
       img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738137/Ludmer%20Engineering/Project%201/IMG_5041_y3fvrc.jpg",
@@ -35,4 +35,4 @@ export const FrProjectOne = () => {
   return <ImageGallery galleryImages={galleryImages} />;
 };
 
-// export default FrProjectOne;
+export default FrProjectOne;

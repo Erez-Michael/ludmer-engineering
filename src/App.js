@@ -26,9 +26,9 @@ import ProjectsPageFr from "./French/components/ProjectCarousel/ProjetsFr";
 import ContactPageFr from "./French/pages/ContactPageFr";
 
 // Projects French
-import { FrProjectOne } from "./French/components/ProjectCarousel/Projects/FrProjectOne.js";
+import FrProjectOne from "./French/components/ProjectCarousel/Projects/FrProjectOne";
 import FrProjectTwo from "./French/components/ProjectCarousel/Projects/FrProjectTwo";
-import FrProjectThree from "./French/components/ProjectCarousel/Projects/FrProjectThree.js";
+import FrProjectThree from "./French/components/ProjectCarousel/Projects/FrProjectThree";
 import FrProjectFour from "./French/components/ProjectCarousel/Projects/FrProjectFour";
 
 const App = () => {
