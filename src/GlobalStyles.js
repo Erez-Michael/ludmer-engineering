@@ -106,7 +106,7 @@ export const Section = styled.section`
   max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : "auto")};
   min-height: ${({ minHeight }) => (minHeight ? minHeight : "auto")};
   @media screen and (max-width: 768px) {
-    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 0")};
+    padding: ${({ smPadding }) => (smPadding ? smPadding : "70px 5px 70px 0")};
   }
 `;
 export const HomeSection = styled.section`
