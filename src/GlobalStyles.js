@@ -36,7 +36,6 @@ export const MainHeading = styled.h1`
   /* Because styles are wrapper in backticks, everything in  between is considered a string. Therefore, when you use ${{}} it becomes vanilla JS and {()} is a functional component and insidea props is passed */
   letter-spacing: 4px;
   backdrop-filter: blur(200px);
-  border-radius:4px;
   text-align: center;
   animation: fadeIn 2s;
   @keyframes fadeIn {
