@@ -14,7 +14,7 @@ const Hero = () => {
       <Wrapper>
         <Container>
           <MainHeading>
-            Where contractors go for <span>efficient&nbsp;</span>
+            Where contractors go for efficient
             design
           </MainHeading>
         </Container>

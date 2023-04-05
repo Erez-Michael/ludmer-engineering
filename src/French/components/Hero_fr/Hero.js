@@ -3,7 +3,7 @@
 //**********************************************//
 
 import React from "react";
-import { Container, MainHeading } from "../../../GlobalStyles";
+import {  Container, MainHeading } from "../../../GlobalStyles";
 import { HeroImage, HeroSection, Wrapper } from "./HeroStyles";
 
 const Hero = () => {
@@ -18,8 +18,9 @@ const Hero = () => {
       <Wrapper>
         <Container>
           <MainHeading>
-            La <span>firme</span> de Génie civil pour les
-            entrepreneurs en construction
+            {/* <span>firme</span> */}
+            La firme de Génie civil pour les entrepreneurs en
+            construction
           </MainHeading>
         </Container>
       </Wrapper>

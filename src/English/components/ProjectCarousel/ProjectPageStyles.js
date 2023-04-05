@@ -174,11 +174,9 @@ export const ImageWrapper = styled(Link)`
 export const ButtonWrapper = styled.div`
   z-index: 2;
   position: relative;
-  bottom: 45%;
-  left: 15%;
+  bottom: 50%;
   border-radius: 10px;
-  width: 70%;
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
   text-shadow: rgb(50, 82, 114) 1px 0px 0px,
     rgb(50, 82, 114) 0.540302px 0.841471px 0px,
     rgb(50, 82, 114) -0.416147px 0.909297px 0px,
@@ -189,6 +187,7 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const CardButton = styled(Link)`
+  /* border: solid red 2px; */
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -197,14 +196,12 @@ export const CardButton = styled(Link)`
   padding: 2rem 2rem;
   color: #fff;
   cursor: pointer;
-  width: 100%;
+
   font-weight: 600;
-  margin: auto 0 0 0;
-  border-radius: 0;
   border-radius: 10px;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.2s ease-in-out;
   }
 `;

@@ -7,10 +7,10 @@ import { Button } from "../../../GlobalStyles";
 
 export const HeroSection = styled.section`
   height: 100vh;
-
   background-position: center;
   background-size: cover;
   padding-top: clamp(70px, 35vh, 220px);
+
   @media screen and (max-width: 1268px) {
     height: 92vh;
   }
@@ -27,7 +27,7 @@ export const HeroSection = styled.section`
 
 export const HeroImage = styled.image`
   position: absolute;
-  top:0;
+  top: 0;
   z-index: -1;
   img {
     width: 100%;
@@ -46,7 +46,7 @@ export const HeroImage = styled.image`
 
 export const Wrapper = styled.div`
   position: relative;
-
+  padding: 2% 15%;
   @media screen and (max-width: 1024px) {
     top: -30%;
   }
@@ -57,7 +57,8 @@ export const Wrapper = styled.div`
     top: -75%;
   }
   @media screen and (max-width: 425px) {
-    top: -90%;
+    top: -80%;
+    padding: 0;
   }
 `;
 
