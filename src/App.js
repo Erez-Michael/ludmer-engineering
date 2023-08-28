@@ -28,8 +28,8 @@ import ContactPageFr from "./French/pages/ContactPageFr";
 // Projects French
 import FrProjectOne from "./French/components/ProjectCarousel/Projects/ProjectOneFr";
 import FrProjectTwo from "./French/components/ProjectCarousel/Projects/ProjectTwoFr";
-import FrProjectThree from "./French/components/ProjectCarousel/Projects/ProjectThreeFr";
-import FrProjectFour from "./French/components/ProjectCarousel/Projects/ProjectFourFr";
+import ProjectThreeFr from "./French/components/ProjectCarousel/Projects/ProjectThreeFr";
+import ProjectFourFr from "./French/components/ProjectCarousel/Projects/ProjectFourFr";
 
 const App = () => {
   return (
@@ -44,11 +44,10 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
 
         {/* Projects */}
-
         <Route path="/Retrofiting+Underpinning" element={<ProjectOne />} />
         <Route path="/Geotechnical-engineering" element={<ProjectTwo />} />
-        <Route path="/Rock-Mechanics" element={<ProjectThree />} />
-        <Route path="/Shoring-design" element={<ProjectFour />} />
+        <Route path="/Shoring-design" element={<ProjectThree />} />
+        <Route path="/Rock-Mechanics" element={<ProjectFour />} />
 
         {/* FRANÇAIS */}
 
@@ -63,9 +62,10 @@ const App = () => {
           path="/Transformation_de_bâtiments_et_sous-oeuvre"
           element={<FrProjectOne />}
         />
+        
         <Route path="/Géotechnique" element={<FrProjectTwo />} />
-        <Route path="/Mécanique_des_roches" element={<FrProjectThree />} />
-        <Route path="/Soutènement_des_terres" element={<FrProjectFour />} />
+        <Route path="/Soutènement_des_terres" element={<ProjectThreeFr />} />
+        <Route path="/Mécanique_des_roches" element={<ProjectFourFr />} />
       </Routes>
       <ScrollTop />
     </BrowserRouter>

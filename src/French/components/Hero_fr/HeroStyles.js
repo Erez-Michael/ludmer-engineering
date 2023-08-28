@@ -25,6 +25,13 @@ export const HeroSection = styled.section`
   }
 `;
 
+export const HeadingContainer = styled.div`
+ margin: 180px auto 0 auto;
+ background: rgb(195,186,175);
+ background: linear-gradient(90deg, rgba(195,186,175,0.05) 0%, rgba(195,186,175,0.3) 5%, rgba(195,186,175,1) 50%, rgba(195,186,175,0.3) 95%, rgba(195,186,175,0.05) 100%);  border-radius: 4px;
+`;
+
+
 export const HeroImage = styled.image`
   position: absolute;
   top: 0;

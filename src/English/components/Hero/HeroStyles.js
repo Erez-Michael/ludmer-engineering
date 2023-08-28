@@ -62,6 +62,13 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const HeadingContainer = styled.div`
+ margin: 180px auto 0 auto;
+ padding: 1%;
+ background: rgb(195,186,175);
+ background: linear-gradient(90deg, rgba(195,186,175,0.05) 0%, rgba(195,186,175,0.3) 5%, rgba(195,186,175,1) 50%, rgba(195,186,175,0.3) 95%, rgba(195,186,175,0.05) 100%);
+`;
+
 export const HeroText = styled.p`
   font-size: clamp(0.9rem, 2.5vw, 1.3rem);
   line-height: 24px;

@@ -3,7 +3,8 @@
 //**********************************************//
 
 import React from "react";
-import {  Container, MainHeading } from "../../../GlobalStyles";
+import { MainHeading } from "../../../GlobalStyles";
+import { HeadingContainer } from "./HeroStyles";
 import { HeroImage, HeroSection, Wrapper } from "./HeroStyles";
 
 const Hero = () => {
@@ -16,13 +17,12 @@ const Hero = () => {
         />
       </HeroImage>
       <Wrapper>
-        <Container>
+        <HeadingContainer>
           <MainHeading>
-            {/* <span>firme</span> */}
-            La firme de Génie civil pour les entrepreneurs en
+            La firme de génie civil pour les entrepreneurs en
             construction
           </MainHeading>
-        </Container>
+        </HeadingContainer>
       </Wrapper>
     </HeroSection>
   );

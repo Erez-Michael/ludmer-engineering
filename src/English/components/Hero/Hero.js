@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, MainHeading } from "../../../GlobalStyles";
 import { HeroImage, HeroSection, Wrapper } from "./HeroStyles";
+import { HeadingContainer } from "./HeroStyles";
+
 
 const Hero = () => {
   return (
@@ -12,12 +14,12 @@ const Hero = () => {
         />
       </HeroImage>
       <Wrapper>
-        <Container>
+        <HeadingContainer>
           <MainHeading>
             Where contractors go for efficient
             design
           </MainHeading>
-        </Container>
+        </HeadingContainer>
       </Wrapper>
     </HeroSection>
   );

@@ -19,25 +19,15 @@ export const Container = styled.div`
   @media screen and (max-width: 960px) {
   }
 `;
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/clamp */
+/* Because styles are wrapper in backticks, everything in  between is considered a string. Therefore, when you use ${{}} it becomes vanilla JS and {()} is a functional component and insidea props is passed */
+
 export const MainHeading = styled.h1`
-/* background: -webkit-linear-gradient(
-  300deg,
-  #7aec8d 5%,
-  #f3ec78 53%,
-  #009966 91%
-  );
-  
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 4px transparent;
-  color: #232d2d;*/
   font-size: clamp(2.3rem, 2vw, 4.5rem);
-  
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/clamp */
-  /* Because styles are wrapper in backticks, everything in  between is considered a string. Therefore, when you use ${{}} it becomes vanilla JS and {()} is a functional component and insidea props is passed */
   letter-spacing: 4px;
-  backdrop-filter: blur(200px);
   text-align: center;
   animation: fadeIn 2s;
+  
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -47,7 +37,6 @@ export const MainHeading = styled.h1`
     }
   }
 
-
   @media screen and (max-width: 768px) {
     font-size: 20px;
   }
@@ -55,16 +44,6 @@ export const MainHeading = styled.h1`
   @media screen and (max-width: 375px) {
     font-size: 18px;
     margin-top: -4rem;
-  }
-
-  span {
-    background-image: linear-gradient(45deg, #009966, #f3ec78);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
   }
 `;
 

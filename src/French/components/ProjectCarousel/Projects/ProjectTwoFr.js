@@ -6,9 +6,11 @@
 
 import React from "react";
 import ImageGallery from "./ImageGallery";
+import NavbarFr from "../../../components/Navbar/NavbarFr";
 
 
-const FrProjectTwo = () => {
+
+const ProjectTwoFr = () => {
   const galleryImages = [
     {
       img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%202/IMG_5123_sgu4v6.jpg",
@@ -23,12 +25,13 @@ const FrProjectTwo = () => {
       img: "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738135/Ludmer%20Engineering/Project%202/IMG_49601_k2hyyw.jpg",
     },
   ];
-
+  
   return (
     <>
-      <ImageGallery galleryImages={galleryImages} />;
-    </>
-  );
+    <NavbarFr />
+    <ImageGallery galleryImages={galleryImages} />;
+  </>
+    )
 };
 
-export default FrProjectTwo;
+export default ProjectTwoFr;

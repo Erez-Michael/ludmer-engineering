@@ -15,7 +15,7 @@ export const data = [
   //Project Two
 
   {
-    title: "Géotechnique",
+    title: "Stabilité de pente",
     description: "",
     image:
       "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%202/IMG_5123_sgu4v6.jpg",
@@ -25,21 +25,22 @@ export const data = [
   //Project three
 
   {
-    title: "Mécanique des roches",
-    description: "",
-    image:
-      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%204/IMG_5241_ufqieb.jpg",
-    navigateTo: "/Mécanique_des_roches",
-  },
-  //Project Four
-
-  {
     title: "Soutènement des terres",
     description: "",
     image:
-      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738131/Ludmer%20Engineering/Project%205/dupre_et_brillon_4803_w3av3b.jpg",
-    navigateTo: "/Soutènement_des_terres",
+      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1693257378/DJI_0221_rih3sc.jpg",
+      navigateTo: "/Soutènement_des_terres",
+    },
+    //Project Four
+    
+    {
+      title: "Mécanique des roches",
+      description: "",
+      image:
+      "https://res.cloudinary.com/dhcrarc6f/image/upload/v1676738134/Ludmer%20Engineering/Project%204/IMG_5241_ufqieb.jpg",
+      navigateTo: "/Mécanique_des_roches",
   },
+
 ];
 
 export const sliderSettings = {
